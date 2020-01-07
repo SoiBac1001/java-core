@@ -32,6 +32,17 @@ public class Search_Algorithms {
 	
 	public static void main(String[] args) {
 		System.out.println("Vị trí của phần tử có giá trị 10 là: " + binary_Search(NUMBERS, 10));
+
+		for(int i=0; i<5; i++){
+			try{
+				if(i == 3){
+					int b = 4/0;
+				}
+				System.out.println(i);
+			}catch (Exception e){
+				System.out.println(e);
+			}
+		}
 	}
 
 }
