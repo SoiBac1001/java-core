@@ -1,0 +1,6 @@
+Hang	 Nam SX	 Mau	 Gia	C.Suat	T.Tai	 S.Cho	 Kieu DC
+mard	 2016	 den	 9000.0			 4	6 xilanh
+honda	 2018	 do	 6000.0	 150.0
+huyndai	 2014	 xanh	 8000.0		 2.5
+honda	 2017	 5500	 5500.0	 125.0
+
