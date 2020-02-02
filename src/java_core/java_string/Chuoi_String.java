@@ -11,7 +11,7 @@ package java_core.java_string;
  */
 public class Chuoi_String {
     public static void main(String[] args) {
-        String a;
+        String a = null;
         String b = a;
         String test1 = "abc".intern();
         System.out.println("abc" == test1);
