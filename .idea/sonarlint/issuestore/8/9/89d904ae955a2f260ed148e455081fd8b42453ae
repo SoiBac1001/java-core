@@ -1,17 +1,19 @@
 
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(š—°øÿÿÿÿ8ôÍ¡ü-
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‘¦ÒÑıÿÿÿÿ8ò§ûü-
-Ssquid:S1854"5Remove this useless assignment to local variable "a".(ï‚İ­8Ô¾ô¡ü-
 U
 squid:S106	"9Replace this use of System.out or System.err by a logger.(Áˆ”8ÿô›ü-
+nsquid:CommentedOutCodeLine""<This block of commented-out lines of code should be removed.(ÆøñÏüÿÿÿÿ8…Ù²ü-
+Xsquid:S1854!"5Remove this useless assignment to local variable "a".(’Ö´Öşÿÿÿÿ8…Ù²ü-
+U
+squid:S106"9Replace this use of System.out or System.err by a logger.(ö›“E8ôÍ¡ü-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Èç€Ëùÿÿÿÿ8ˆ‹ÑŸü-
 U
 squid:S106"9Replace this use of System.out or System.err by a logger.(ÔÊ¢p8»í ü-
-\squid:S1226">Introduce a new variable instead of reusing the parameter "a".(ï‚İ­8—Ôó¡ü-
 [
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÒåÓÑûÿÿÿÿ8ª€»¡ü-
-U
-squid:S106"9Replace this use of System.out or System.err by a logger.(Áˆ”8÷±ÍŸü-
-nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(Èç€Ëùÿÿÿÿ8ˆ‹ÑŸü-
-Dsquid:S1481"&Remove this unused "a" local variable.(¨Æã8ˆ‹ÑŸü-
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÒåÓÑûÿÿÿÿ8ª€»¡ü-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(¡¹—Òøÿÿÿÿ8àŞ»ü-
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(ñô©Şÿÿÿÿÿ8÷±ÍŸü-
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(‘¦ÒÑıÿÿÿÿ8ò§ûü-
 jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(à¢’Şşÿÿÿÿ
+Dsquid:S1481"&Remove this unused "a" local variable.(¨Æã8ˆ‹ÑŸü-

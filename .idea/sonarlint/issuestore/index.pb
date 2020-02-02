@@ -21,3 +21,5 @@ M
 src/java_regex/JavaRegex.java,d\e\de9252076135cd9bbb03fa6fe2ac56973ac2a0ff
 Y
 )src/java_collection/Test_Collections.java,8\9\89d904ae955a2f260ed148e455081fd8b42453ae
+[
++src/java_core/java_string/Chuoi_String.java,c\6\c6819f2877731f2795e365fbe2419e01cb5b9006

@@ -10,9 +10,14 @@ public class Test_Collections {
         Set<Integer> integerSet = new HashSet<>(integerList);
         System.out.println("integerSet" + integerSet);
 //        integerList = new ArrayList<>(integerSet);
+        integerList.add(null);
         integerList.add(5);
         integerList.set(0, 6);
-        System.out.println("integerList" + integerList);
+        Iterator<Integer> iterator = integerList.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+        System.out.println("integerList" + integerList + ", " + integerList.size());
         final Integer a = 0;
 //        a = 6;
 //        System.out.println(a);
@@ -21,11 +26,11 @@ public class Test_Collections {
         System.out.println(mapTest);
         Integer b = 5;
         grow(b);
-        System.out.println(b);
+        System.out.println(b); // 5
     }
 
     static void grow(Integer a){
-        Integer c = 0;
-        a = c;
+        a = a + 1;
+//        a++;
     }
 }

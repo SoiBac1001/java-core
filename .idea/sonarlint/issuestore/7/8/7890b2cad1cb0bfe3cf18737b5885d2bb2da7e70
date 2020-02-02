@@ -1,12 +1,12 @@
 
-esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(üŞôº
-%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ
-N
-squid:S106"9Replace this use of System.out or System.err by a logger.(²ÏË
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(˜âËòøÿÿÿÿ
 T
 squid:S1061"9Replace this use of System.out or System.err by a logger.(Š‚éåùÿÿÿÿ
+N
+squid:S106"9Replace this use of System.out or System.err by a logger.(²ÏË
 Nsquid:S18547"7Remove this useless assignment to local variable "ret".(âÔë
-gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(˜âËòøÿÿÿÿ
 gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(¿‚½Äşÿÿÿÿ
+esquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(üŞôº
+T
+squid:S106"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ
+%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø

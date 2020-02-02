@@ -11,7 +11,11 @@ package java_core.java_string;
  */
 public class Chuoi_String {
     public static void main(String[] args) {
-        
+        String a;
+        String b = a;
+        String test1 = "abc".intern();
+        System.out.println("abc" == test1);
+
         /* Chuoi con */
         String str = "Hello World !";
         String subStr = str.substring(0); // gan subStr = str bat dau tu vi tri 0
