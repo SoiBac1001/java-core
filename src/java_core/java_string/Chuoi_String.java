@@ -15,6 +15,10 @@ public class Chuoi_String {
         String b = a;
         String test1 = "abc".intern();
         System.out.println("abc" == test1);
+        final String q = "abcbcd";
+        String searh = "abc" + "bcd";
+        String qSearch = new StringBuilder("abc").append("bcd").toString();
+        System.out.println(q == searh);
 
         /* Chuoi con */
         String str = "Hello World !";

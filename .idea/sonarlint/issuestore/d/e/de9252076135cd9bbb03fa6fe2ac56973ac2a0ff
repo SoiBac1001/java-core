@@ -1,12 +1,12 @@
 
 V
 squid:S106#"9Replace this use of System.out or System.err by a logger.(¼Ç·¼8Üµü-
-Msquid:S1481"*Remove this unused "text2" local variable.(á‹œûÿÿÿÿ8Üµü-
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(â†Û§8Üµü-
 V
 squid:S106*"9Replace this use of System.out or System.err by a logger.(¦ÿÊ…8Üµü-
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(â†Û§8Üµü-
-[
-squid:S106!"9Replace this use of System.out or System.err by a logger.(ìÅË“ıÿÿÿÿ8Üµü-
 \squid:S1854"9Remove this useless assignment to local variable "text2".(á‹œûÿÿÿÿ8Üµü-
 V
 squid:S106"9Replace this use of System.out or System.err by a logger.(­“ÑÜ8Üµü-
+Msquid:S1481"*Remove this unused "text2" local variable.(á‹œûÿÿÿÿ8Üµü-
+[
+squid:S106!"9Replace this use of System.out or System.err by a logger.(ìÅË“ıÿÿÿÿ8Üµü-

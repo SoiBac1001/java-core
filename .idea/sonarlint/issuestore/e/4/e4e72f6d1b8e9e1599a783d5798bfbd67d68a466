@@ -1,18 +1,18 @@
 
+jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(„áÆ øÿÿÿÿ
+O
+squid:S106 "9Replace this use of System.out or System.err by a logger.(ºê™
+T
+squid:S106#"9Replace this use of System.out or System.err by a logger.(é©Ñ¥úÿÿÿÿ
+T
+squid:S106!"9Replace this use of System.out or System.err by a logger.(ñ¥äÃûÿÿÿÿ
 T
 squid:S106"9Replace this use of System.out or System.err by a logger.(œªÃİüÿÿÿÿ
 O
-squid:S106*"9Replace this use of System.out or System.err by a logger.(Æ”ôº
-T
-squid:S106!"9Replace this use of System.out or System.err by a logger.(ñ¥äÃûÿÿÿÿ
-bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(œì­’
-jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(„áÆ øÿÿÿÿ
-O
 squid:S106'"9Replace this use of System.out or System.err by a logger.(Õñ‚—
+O
+squid:S106*"9Replace this use of System.out or System.err by a logger.(Æ”ôº
+Qsquid:S2209!"5Change this instance-reference to a static reference.(ñ¥äÃûÿÿÿÿ
+bsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(œì­’
 T
 squid:S106%"9Replace this use of System.out or System.err by a logger.(°§ÄÎúÿÿÿÿ
-O
-squid:S106 "9Replace this use of System.out or System.err by a logger.(ºê™
-Qsquid:S2209!"5Change this instance-reference to a static reference.(ñ¥äÃûÿÿÿÿ
-T
-squid:S106#"9Replace this use of System.out or System.err by a logger.(é©Ñ¥úÿÿÿÿ

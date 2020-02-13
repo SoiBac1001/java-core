@@ -23,3 +23,5 @@ Y
 )src/java_collection/Test_Collections.java,8\9\89d904ae955a2f260ed148e455081fd8b42453ae
 [
 +src/java_core/java_string/Chuoi_String.java,c\6\c6819f2877731f2795e365fbe2419e01cb5b9006
+a
+1src/java_core/java_string/StringBuilderClass.java,a\4\a453224d15f5609ec874f73e1fee361f2e6bddcb
