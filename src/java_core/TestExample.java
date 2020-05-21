@@ -17,7 +17,12 @@ import java.util.List;
 
 public class TestExample {
   public static void main(String[] args) {
+	  int[] array1 = {1, 2, 3};
+	  System.out.println(array1);
+	  int[] array2 = {5, 6, 7, 8};
+	  array1 = new int[] {5, 6, 7, 8};
     int a1 = 1000, a2 = 1000;
+    System.out.println(array1);
     System.out.println(a1 == a2); // true
     
     Integer b1 = 1000, b2 = 1000; // KO THUỘC (-128; 127) => tạo ra 2 đt Integer => so sánh == ở đây là so sánh địa chỉ của nó

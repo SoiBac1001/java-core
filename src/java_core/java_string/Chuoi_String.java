@@ -11,6 +11,9 @@ package java_core.java_string;
  */
 public class Chuoi_String {
     public static void main(String[] args) {
+        int b1 = 0;
+        int a1 = b1 = 1;
+        System.out.println(a1 + " " + b1);
         String a = null;
         String b = a;
         String test1 = "abc".intern();
