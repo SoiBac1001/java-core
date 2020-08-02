@@ -49,3 +49,7 @@ j
 :src/java_functional_interface/DemoFunctionalInterface.java,1\4\145609efb055d41a5f5a22af8b007747b6963345
 `
 0src/java_functional_interface/BaseInterface.java,3\8\38c50db24aeb794efcc1b21b617e0b0ea3835cd4
+\
+,src/java_core/collection/VD_Collections.java,4\9\492cfc398edb896394687a07238b0b52eb786033
+R
+"src/java_core/collection/Test.java,3\a\3aa9b9df7394c997b78eccd967d2332feba09016
