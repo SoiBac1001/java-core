@@ -1,59 +1,59 @@
 
-J
-java:S1172"(Remove this unused method parameter "x".(¾›§ÿþÿÿÿÿ8”¹‹Ìª.
-U	java:S106P"9Replace this use of System.out or System.err by a logger.(Áß‡Ü8 —½Ùª.
-U	java:S106Q"9Replace this use of System.out or System.err by a logger.(€»ÿÛ8™Ñ½Ùª.
-]	java:S125
-"<This block of commented-out lines of code should be removed.(Ž§é÷ýÿÿÿÿ8µÎ »ª.
-X	java:S125&"<This block of commented-out lines of code should be removed.(¿Ìºñ8±ÝÅÌª.
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‚æŠÐ8ÓúëÂª.
-Y
-java:S2589"7Remove this expression which always evaluates to "true"(ªŸÊÿÿÿÿÿ8‰×”æ¤.
-A
-java:S1659"Declare "k" on a separate line.(–œ”Èûÿÿÿÿ8µ¤ôÐ­.
-t
-java:S37762"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Ëóí«úÿÿÿÿ8œß®Ùª.
-B
-java:S2129M" Remove this "String" constructor(ð¦Öëýÿÿÿÿ8ÎË»Ùª.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(­Ø½Ç8Ø÷Þºª.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(Ú“ÜÝ8×ãíÐ­.
-A
-java:S1659K"Declare "b" on a separate line.(¬¡äºûÿÿÿÿ8ÎË»Ùª.
-]	java:S125"<This block of commented-out lines of code should be removed.(£žÜÙÿÿÿÿÿ8©ÆÙä¤.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(­´íý8ÏîÿÂª.
-t	java:S1356"YReduce the total number of break and continue statements in this loop to use at most one.(Æð±i8éŠ®Ìª.
-W
-java:S1854"5Remove this useless assignment to local variable "m".(°Ñé†þÿÿÿÿ8µ¤ôÐ­.
 B
 java:S2129L" Remove this "String" constructor(ÙÍéÂþÿÿÿÿ8ÎË»Ùª.
-X	java:S125;"<This block of commented-out lines of code should be removed.(±¯€¤8•é²Ùª.
-Z	java:S106 "9Replace this use of System.out or System.err by a logger.(Ã”…ªûÿÿÿÿ8Ñ—Ìª.
-?
-java:S21894""Correct this loop's end condition.(âØ“»8Š©¡Ìª.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(×È¯ùùÿÿÿÿ8…‡ÖÙª.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ù¿éûÿÿÿÿ8ƒÆŽå¤.
-V
-java:S22514"9"i" is decremented and will never reach "stop condition".(âØ“»8Š©¡Ìª.
-h
-java:S1764"KCorrect one of the identical sub-expressions on both sides of operator "=="(ß˜É”8ûØŒÌª.
-]
-java:S1119";Refactor the code to remove this label and the need for it.(£ÚÏ¹úÿÿÿÿ8ûØŒÌª.
-W
-java:S1854"5Remove this useless assignment to local variable "k".(°Ñé†þÿÿÿÿ8µ¤ôÐ­.
-W
-java:S11196";Refactor the code to remove this label and the need for it.(Æð±i8ðÀ«Ìª.
-K
-java:S1125")Remove the literal "false" boolean value.(ªŸÊÿÿÿÿÿ8‰×”æ¤.
-A
-java:S1659"Declare "m" on a separate line.(–œ”Èûÿÿÿÿ8µ¤ôÐ­.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(´‹¹öþÿÿÿÿ8ûØŒÌª.
-X
-java:S11194";Refactor the code to remove this label and the need for it.(âØ“»8ÑªžÌª.
 T
 java:S2589"7Remove this expression which always evaluates to "true"(ß˜É”8ûØŒÌª.
-U	java:S106G"9Replace this use of System.out or System.err by a logger.(îØÇ8•é²Ùª.
+K
+java:S1125")Remove the literal "false" boolean value.(ªŸÊÿÿÿÿÿ8‰×”æ¤.
+t
+java:S37762"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Ëóí«úÿÿÿÿ8œß®Ùª.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(×È¯ùùÿÿÿÿ8…‡ÖÙª.
+W
+java:S1854"5Remove this useless assignment to local variable "k".(°Ñé†þÿÿÿÿ8µ¤ôÐ­.
+B
+java:S2129M" Remove this "String" constructor(ð¦Öëýÿÿÿÿ8ÎË»Ùª.
+U	java:S106P"9Replace this use of System.out or System.err by a logger.(Áß‡Ü8 —½Ùª.
 A
-java:S1659K"Declare "c" on a separate line.(¬¡äºûÿÿÿÿ8ÎË»Ùª.
-Z	java:S106E"9Replace this use of System.out or System.err by a logger.(µÏ…èùÿÿÿÿ8Ï›°Ìª.
+java:S1659"Declare "k" on a separate line.(–œ”Èûÿÿÿÿ8µ¤ôÐ­.
+X
+java:S11194";Refactor the code to remove this label and the need for it.(âØ“»8ÑªžÌª.
+]
+java:S1119";Refactor the code to remove this label and the need for it.(£ÚÏ¹úÿÿÿÿ8ûØŒÌª.
 5
 java:S10656"Remove this unused label.(Æð±i8ï¥´Ùª.
+W
+java:S11196";Refactor the code to remove this label and the need for it.(Æð±i8ðÀ«Ìª.
+A
+java:S1659"Declare "m" on a separate line.(–œ”Èûÿÿÿÿ8µ¤ôÐ­.
+Z	java:S106 "9Replace this use of System.out or System.err by a logger.(Ã”…ªûÿÿÿÿ8Ñ—Ìª.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ù¿éûÿÿÿÿ8ƒÆŽå¤.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ú“ÜÝ8×ãíÐ­.
+W
+java:S1854"5Remove this useless assignment to local variable "m".(°Ñé†þÿÿÿÿ8µ¤ôÐ­.
+Y
+java:S2589"7Remove this expression which always evaluates to "true"(ªŸÊÿÿÿÿÿ8‰×”æ¤.
+J
+java:S1172"(Remove this unused method parameter "x".(¾›§ÿþÿÿÿÿ8”¹‹Ìª.
+A
+java:S1659K"Declare "c" on a separate line.(¬¡äºûÿÿÿÿ8ÎË»Ùª.
+]	java:S125
+"<This block of commented-out lines of code should be removed.(Ž§é÷ýÿÿÿÿ8µÎ »ª.
+V
+java:S22514"9"i" is decremented and will never reach "stop condition".(âØ“»8Š©¡Ìª.
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‚æŠÐ8ÓúëÂª.
+]	java:S125"<This block of commented-out lines of code should be removed.(£žÜÙÿÿÿÿÿ8©ÆÙä¤.
+U	java:S106Q"9Replace this use of System.out or System.err by a logger.(€»ÿÛ8™Ñ½Ùª.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(­´íý8ÏîÿÂª.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(­Ø½Ç8Ø÷Þºª.
+t	java:S1356"YReduce the total number of break and continue statements in this loop to use at most one.(Æð±i8éŠ®Ìª.
+?
+java:S21894""Correct this loop's end condition.(âØ“»8Š©¡Ìª.
+h
+java:S1764"KCorrect one of the identical sub-expressions on both sides of operator "=="(ß˜É”8ûØŒÌª.
+U	java:S106G"9Replace this use of System.out or System.err by a logger.(îØÇ8•é²Ùª.
+X	java:S125&"<This block of commented-out lines of code should be removed.(¿Ìºñ8±ÝÅÌª.
+Z	java:S106E"9Replace this use of System.out or System.err by a logger.(µÏ…èùÿÿÿÿ8Ï›°Ìª.
+A
+java:S1659K"Declare "b" on a separate line.(¬¡äºûÿÿÿÿ8ÎË»Ùª.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(´‹¹öþÿÿÿÿ8ûØŒÌª.
+X	java:S125;"<This block of commented-out lines of code should be removed.(±¯€¤8•é²Ùª.

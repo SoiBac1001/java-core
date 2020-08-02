@@ -73,3 +73,7 @@ W
 'src/java_reflection/TestReflection.java,5\9\599aede8fd942ede14978024af2f88aac0d276d2
 M
 src/java_reflection/Demo.java,3\d\3d5761fd0913cf27fd086d8e80416ab853dcbc25
+j
+:src/java_functional_interface/DemoFunctionalInterface.java,1\4\145609efb055d41a5f5a22af8b007747b6963345
+`
+0src/java_functional_interface/BaseInterface.java,3\8\38c50db24aeb794efcc1b21b617e0b0ea3835cd4
