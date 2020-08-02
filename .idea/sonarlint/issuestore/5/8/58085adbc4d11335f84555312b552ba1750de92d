@@ -1,0 +1,79 @@
+
+H
+java:S1481^"&Remove this unused "a" local variable.(ÿòÑ¼ûÿÿÿÿ8›†˜Úª.
+Z	java:S106f"9Replace this use of System.out or System.err by a logger.(©¨ÑÈùÿÿÿÿ8›†˜Úª.
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(Å«²”ÿÿÿÿÿ8²¥­Úª.
+I
+java:S1481F"'Remove this unused "c2" local variable.(ÄŠÍÄıÿÿÿÿ8›†˜Úª.
+U	java:S106Q"9Replace this use of System.out or System.err by a logger.(º¿ñš8›†˜Úª.
+t
+java:S2177s"WRename this method; there is a "private" method in the parent class with the same name.(åØã8›†˜Úª.
+I
+java:S1481H"'Remove this unused "c3" local variable.(öµÀ¬üÿÿÿÿ8›†˜Úª.
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(şÆá®8›†˜Úª.
+Z	java:S106Y"9Replace this use of System.out or System.err by a logger.(ÓË•ëùÿÿÿÿ8›†˜Úª.
+X
+java:S1854H"6Remove this useless assignment to local variable "c3".(öµÀ¬üÿÿÿÿ8›†˜Úª.
+q
+java:S1450"TRemove the "loop3" field and declare it as a local variable in the relevant methods.(áÜĞˆ8©½¢Úª.
+U	java:S106M"9Replace this use of System.out or System.err by a logger.(Ğº§µ8›†˜Úª.
+X	java:S125o"<This block of commented-out lines of code should be removed.(¬ÆŠÌ8›†˜Úª.
+X
+java:S1854F"6Remove this useless assignment to local variable "c2".(ÄŠÍÄıÿÿÿÿ8›†˜Úª.
+W
+java:S1854_"5Remove this useless assignment to local variable "f".(×Ø²Éúÿÿÿÿ8›†˜Úª.
+Z	java:S1063"9Replace this use of System.out or System.err by a logger.(š—°øÿÿÿÿ8›†˜Úª.
+]	java:S125`"<This block of commented-out lines of code should be removed.(©ñßøøÿÿÿÿ8›†˜Úª.
+W
+java:S18541"5Remove this useless assignment to local variable "b".(Â“¼Œüÿÿÿÿ8›†˜Úª.
+J
+java:S1068"(Remove this unused "loop" private field.(»Òòıÿÿÿÿ8›†˜Úª.
+[
+java:S1128"9Remove this unused import 'javafx.scene.input.KeyCode.F'.(ƒüÍÿÿÿÿÿ8·ßíª.
+K
+java:S1068")Remove this unused "loop2" private field.(öÅ¸ûÿÿÿÿ8›†˜Úª.
+H
+java:S1481_"&Remove this unused "f" local variable.(×Ø²Éúÿÿÿÿ8›†˜Úª.
+F
+java:S1068")Remove this unused "loop3" private field.(áÜĞˆ8›†˜Úª.
+G
+java:S1144"*Remove this unused private "test2" method.(»İ“í8üØ­Úª.
+P
+java:S11211".Extract the assignment out of this expression.(Â“¼Œüÿÿÿÿ8ªøÿÙª.
+U	java:S106p"9Replace this use of System.out or System.err by a logger.(ÚÈĞï8›†˜Úª.
+e
+java:S2583J"CChange this condition so that it does not always evaluate to "true"(ıÓû…úÿÿÿÿ8ĞÉ¢’ª.
+U	java:S106K"9Replace this use of System.out or System.err by a logger.(Ğº§µ8›†˜Úª.
+Z	java:S106g"9Replace this use of System.out or System.err by a logger.(ú¿Ó¡şÿÿÿÿ8›†˜Úª.
+R
+java:S1854h"5Remove this useless assignment to local variable "b".(ƒ½«ı8›†˜Úª.
+U	java:S106="9Replace this use of System.out or System.err by a logger.(ûÙ¹”8›†˜Úª.
+U	java:S106d"9Replace this use of System.out or System.err by a logger.(òıÌÀ8›†˜Úª.
+U	java:S1067"9Replace this use of System.out or System.err by a logger.(Ã•‹8›†˜Úª.
+P
+java:S1121J".Extract the assignment out of this expression.(ıÓû…úÿÿÿÿ8•´‘‘ª.
+]	java:S125G"<This block of commented-out lines of code should be removed.(ìçÙîÿÿÿÿÿ8›†˜Úª.
+Z	java:S1062"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8›†˜Úª.
+W
+java:S1854^"5Remove this useless assignment to local variable "a".(ÿòÑ¼ûÿÿÿÿ8›†˜Úª.
+W	java:S1254"<This block of commented-out lines of code should be removed.(ÛÑõy8›†˜Úª.
+Z	java:S106I"9Replace this use of System.out or System.err by a logger.(Ìàúåüÿÿÿÿ8›†˜Úª.
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(¨™Ä‰úÿÿÿÿ8²¥­Úª.
+Z	java:S106e"9Replace this use of System.out or System.err by a logger.(·ùßóıÿÿÿÿ8›†˜Úª.
+W
+java:S1854."5Remove this useless assignment to local variable "a".(ò†äıÿÿÿÿ8›†˜Úª.
+{
+java:S1171
+"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ8›†˜Úª.
+U	java:S106X"9Replace this use of System.out or System.err by a logger.(¤â‡8›†˜Úª.
+C
+java:S1481h"&Remove this unused "b" local variable.(ƒ½«ı8›†˜Úª.
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(´ü¡
+}
+java:S3923J"[Remove this conditional structure or edit its code blocks so that they're not all the same.(ıÓû…úÿÿÿÿ8›†˜Úª.
+G
+java:S1172"*Remove this unused method parameter "age".(Šš8›†˜Úª.
+Z	java:S1068"9Replace this use of System.out or System.err by a logger.(×È¯ùùÿÿÿÿ8›†˜Úª.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(µ÷€·şÿÿÿÿ8›†˜Úª.

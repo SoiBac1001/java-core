@@ -1,0 +1,23 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(‘ëÃæÿÿÿÿÿ8—’ÿ¬.
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(€°£•ıÿÿÿÿ
+R
+java:S1854B"5Remove this useless assignment to local variable "l".(òè¢Í8Ü…Ú¬.
+N
+java:S1874A",Remove this use of "Long"; it is deprecated.(³×ıìşÿÿÿÿ8İµë¬.
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÏÚ·Çÿÿÿÿÿ
+N	java:S1065"9Replace this use of System.out or System.err by a logger.(×Šúÿ
+E
+java:S1125"(Remove the literal "true" boolean value.(Íş—©8—’ÿ¬.
+S	java:S106;"9Replace this use of System.out or System.err by a logger.(Ì¥¦Œúÿÿÿÿ
+U	java:S106C"9Replace this use of System.out or System.err by a logger.(‡Û¨ù8ÛÁİ¬.
+C
+java:S1481B"&Remove this unused "l" local variable.(òè¢Í8Ü…Ú¬.
+F
+java:S1144?")Remove this unused private "test" method.(¬ÊµË8¸€Ù¬.
+I
+java:S1874B",Remove this use of "Long"; it is deprecated.(òè¢Í8Ü…Ú¬.
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ü÷¡é
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(¢³™éùÿÿÿÿ
+U
+java:S2130B"8Use "Long.parseLong" for this string-to-long conversion.(òè¢Í8Ü…Ú¬.

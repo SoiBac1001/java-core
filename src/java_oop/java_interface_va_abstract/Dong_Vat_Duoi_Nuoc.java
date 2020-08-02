@@ -14,12 +14,23 @@ package java_oop.java_interface_va_abstract;
  * @author SoiBac1001
  */
 public interface Dong_Vat_Duoi_Nuoc extends Dong_Vat, Dong_Vat_Tren_Can, Hanh_Dong{ // không thể khởi tạo interface Dong_Vat_Duoi_Nuoc dv = new Dong_Vat_Duoi_Nuoc();
-    public int a = 5; // mặc định là biến static final // Mọi phương thức, property đều mặc định là public.
-	public void move(); // mặc định là abstract
+	int a = 5; // mặc định là biến static final // Mọi phương thức, property đều mặc định là public.
+	void move(); // mặc định là abstract
 	
 	@Override
 	default void run() { // ? // cung cấp triển khai method run() từ Dong_Vat interface thì cũng ko giải quyết được gì
 		// TODO Auto-generated method stub
 		System.out.println("oh");
+	}
+
+	default void print(String string) {
+		if (!isNull(string))
+			System.out.println("ThirdInterface Print::" + string);
+	}
+
+	static boolean isNull(String string) {
+		System.out.println("Interface Null Check");
+
+		return string == null ? true : "".equals(string) ? true : false;
 	}
 }

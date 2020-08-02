@@ -1,0 +1,40 @@
+
+N	java:S106u"9Replace this use of System.out or System.err by a logger.(¹á¬ù
+M
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+S	java:S106{"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
+Q
+java:S2696W"6Make the enclosing method "static" or remove this set.(±Í¬¦ùÿÿÿÿ
+I
+java:S1199†"-Extract this nested code block into a method.(ğÁ–Óûÿÿÿÿ
+N	java:S106s"9Replace this use of System.out or System.err by a logger.(Ä€’æ
+Q	java:S125m"<This block of commented-out lines of code should be removed.(î¯ÔÉ
+N	java:S106Q"9Replace this use of System.out or System.err by a logger.(Çâëü
+N
+java:S1135¢"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+M
+java:S1135$"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+S	java:S106Y"9Replace this use of System.out or System.err by a logger.(šûã‡şÿÿÿÿ
+M	java:S106t"9Replace this use of System.out or System.err by a logger.(ë„æd
+S	java:S106x"9Replace this use of System.out or System.err by a logger.(Ğ ›×ûÿÿÿÿ
+N	java:S106I"9Replace this use of System.out or System.err by a logger.(«¨ï
+S	java:S106y"9Replace this use of System.out or System.err by a logger.(“İõåıÿÿÿÿ
+N
+java:S1135œ"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(‹ƒî°üÿÿÿÿ
+o
+java:S2293b"YReplace the type specification in this constructor call with the diamond operator ("<>").(‹¸Ñ¯
+N	java:S106K"9Replace this use of System.out or System.err by a logger.(¥ã×ë
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ê‹‘
+I
+java:S1199"-Extract this nested code block into a method.(úÀôãùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ç¡Ğııÿÿÿÿ
+M	java:S106w"9Replace this use of System.out or System.err by a logger.(ÁİÖ
+H
+java:S1199~"-Extract this nested code block into a method.(·ÿ½äûÿÿÿÿ
+I
+java:S1199‘"-Extract this nested code block into a method.(Í‡¬‰úÿÿÿÿ
+7	java:S131}""Add a default case to this switch.(ŠÎ’¹
+O	java:S106ˆ"9Replace this use of System.out or System.err by a logger.(ŸÏÍè
+M	java:S106R"9Replace this use of System.out or System.err by a logger.(†ë•/
+N	java:S106v"9Replace this use of System.out or System.err by a logger.(ÔóòŠ

@@ -21,9 +21,17 @@ public class Ca implements Dong_Vat_Duoi_Nuoc{ // Do Dong_Vat_Duoi_Nuoc extends 
 		System.out.println("Boi...");
 		
 	}
-	
-	public static void main(String[] args) {
+
+    public boolean isNull(String string) {
+        System.out.println("Impl Null Check");
+
+        return string == null ? true : false;
+    }
+
+    public static void main(String[] args) {
 		Ca ca = new Ca();
+		ca.print("");
+		ca.isNull("abc");
 		ca.run(); // Boi...
 		Dong_Vat_Duoi_Nuoc dv = ca;
 		dv.run(); // Boi...
@@ -50,6 +58,13 @@ public class Ca implements Dong_Vat_Duoi_Nuoc{ // Do Dong_Vat_Duoi_Nuoc extends 
   public String food() {
     System.out.println("Food...");
     return null;
+  }
+
+  private void test(){
+        String mStr = "123";
+        new Long(mStr);
+        long l = new Long(mStr);
+      System.out.println(Long.parseLong(mStr));
   }
     
 }

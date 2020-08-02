@@ -1,0 +1,19 @@
+
+T	java:S106"9Replace this use of System.out or System.err by a logger.(‹ƒ»28»»ˆÚ·.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(‹¿¦´8»»ˆÚ·.
+J
+java:S1481"-Remove this unused "myClass2" local variable.(ô×™8»»ˆÚ·.
+E
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ñèŒÚ·.
+T	java:S106"9Replace this use of System.out or System.err by a logger.(±ÑšV8»»ˆÚ·.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ş—Ääüÿÿÿÿ8»»ˆÚ·.
+Y
+java:S1854"<Remove this useless assignment to local variable "myClass2".(ô×™8»»ˆÚ·.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(û€ãç8»»ˆÚ·.
+U	java:S106!"9Replace this use of System.out or System.err by a logger.(¥’š²8»»ˆÚ·.
+T	java:S106"9Replace this use of System.out or System.err by a logger.(‚ÈŒ$8»»ˆÚ·.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ß´ÖŸûÿÿÿÿ8»»ˆÚ·.
+N
+java:S1874	",Remove this use of "Test"; it is deprecated.(Ú øüøÿÿÿÿ8¢œ¸ı·.
+N
+java:S1874	",Remove this use of "Test"; it is deprecated.(Ú øüøÿÿÿÿ8¢œ¸ı·.
