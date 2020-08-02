@@ -1,8 +1,0 @@
-
-N	java:S106"9Replace this use of System.out or System.err by a logger.(õ“ÕÎ
-A
-java:S1481"&Remove this unused "b" local variable.(§Âæ¼úÿÿÿÿ
-P
-java:S1854"5Remove this useless assignment to local variable "b".(§Âæ¼úÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(»µ—Íýÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(“ÀÉ’üÿÿÿÿ

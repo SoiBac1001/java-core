@@ -15,10 +15,13 @@ import java.util.*;
  */
 public class VD_Collections {
     public static void main(String[] args) {
-        String source = "source";
+        String source = "soibac1001";
         String encodeBase64 = encodeBase64(source.getBytes());
-        String decodeBase64 = decodeBase64(source.getBytes());
+        System.out.println(encodeBase64);
+//        String decodeBase64 = decodeBase64(source.getBytes());
         String decode = decodeBase64(encodeBase64);
+        System.out.println(decode);
+        System.out.println(decodeBase64("SKeBrU1w4QhjNiZENQ56"));
 
         Collection name = new ArrayList();
         name.add("Nui Truc");
