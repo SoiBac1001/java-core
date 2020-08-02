@@ -4,11 +4,10 @@
  *  + next(): lấy phần tử tiếp theo
  *  + remove(): loại bò phần tử cuối cùng
  */
-package java_core;
+package java_core.collection;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
+import java.nio.charset.StandardCharsets;
+import java.util.*;
 
 /**
  *
@@ -16,6 +15,11 @@ import java.util.Iterator;
  */
 public class VD_Collections {
     public static void main(String[] args) {
+        String source = "source";
+        String encodeBase64 = encodeBase64(source.getBytes());
+        String decodeBase64 = decodeBase64(source.getBytes());
+        String decode = decodeBase64(encodeBase64);
+
         Collection name = new ArrayList();
         name.add("Nui Truc");
         name.add("Giang Van Minh");
@@ -37,5 +41,22 @@ public class VD_Collections {
         for(Object k : list){
             System.out.println(k + ", ");
         }
+    }
+
+    private void test(){
+        encodeBase64("source".getBytes());
+    }
+
+    private static String encodeBase64(byte[] source){
+        return Base64.getEncoder().encodeToString(source);
+    }
+
+    private static String decodeBase64(byte[] source){
+        return Arrays.toString(Base64.getDecoder().decode(source));
+    }
+
+    private static String decodeBase64(String source){
+//        return new String(Base64.getDecoder().decode(source), StandardCharsets.UTF_8);
+        return new String(Base64.getDecoder().decode(source));
     }
 }
