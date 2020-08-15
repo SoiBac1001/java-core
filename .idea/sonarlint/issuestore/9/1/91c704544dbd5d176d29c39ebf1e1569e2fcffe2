@@ -1,33 +1,0 @@
-
-O
-squid:S106&"9Replace this use of System.out or System.err by a logger.(ÃÙğØ
-Tsquid:S11975"8Move the array designator from the variable to the type.(äáª–üÿÿÿÿ
-T
-squid:S106/"9Replace this use of System.out or System.err by a logger.(ÚÜ¯Æøÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ŠâÉüÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(ö®ÒĞÿÿÿÿÿ
-7squid:S1659" Declare "c2" on a separate line.(¡İºÿ
-Usquid:S4973"9Use the "equals" method if value comparison was intended.(ö®ÒĞÿÿÿÿÿ
-O
-squid:S106"9Replace this use of System.out or System.err by a logger.(½ÒÍĞ
-T
-squid:S1069"9Replace this use of System.out or System.err by a logger.(‡’®¤şÿÿÿÿ
-Psquid:S4973"9Use the "equals" method if value comparison was intended.(½ÒÍĞ
-T
-squid:S1067"9Replace this use of System.out or System.err by a logger.(‡îÁÂùÿÿÿÿ
-<squid:S1659" Declare "a2" on a separate line.(Õ€£Éüÿÿÿÿ
-7squid:S1659" Declare "b2" on a separate line.(ÿ™Õ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(äõˆŸÿÿÿÿÿ
-T
-squid:S106"9Replace this use of System.out or System.err by a logger.(Æ¬÷İøÿÿÿÿ
-O
-squid:S106$"9Replace this use of System.out or System.err by a logger.(Ù©È±
-usquid:S2293)"YReplace the type specification in this constructor call with the diamond operator ("<>").(çâîÀıÿÿÿÿ
-T
-squid:S1061"9Replace this use of System.out or System.err by a logger.(‡’®¤şÿÿÿÿ
-T
-squid:S1063"9Replace this use of System.out or System.err by a logger.(Æ¬÷İøÿÿÿÿ
-usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(«ªÈûÿÿÿÿ

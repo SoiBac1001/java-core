@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java_Core.iml" filepath="$PROJECT_DIR$/Java_Core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_Core1.iml" filepath="$PROJECT_DIR$/Java_Core1.iml" />
       <module fileurl="file://F:/UNIVERSITY/WORK/FPT/FRESHER JAVA/FRESHER JAVA WEB/SPRING BOOT/Spring Boot File Upload _ Download/Example_spring-boot-file-upload-download-rest-api/file-demo.iml" filepath="F:/UNIVERSITY/WORK/FPT/FRESHER JAVA/FRESHER JAVA WEB/SPRING BOOT/Spring Boot File Upload _ Download/Example_spring-boot-file-upload-download-rest-api/file-demo.iml" />
     </modules>
   </component>

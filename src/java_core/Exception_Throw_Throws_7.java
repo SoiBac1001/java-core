@@ -41,7 +41,7 @@ public class Exception_Throw_Throws_7 {
     }
 }
 
-class test extends Exception_Throw_Throws_7{
+class test2 extends Exception_Throw_Throws_7{
 //    @Override
 //    void readFile() throws IOException{ // k được do ngoại lệ của lớp con > ngoại lệ của lớp cha
 //        

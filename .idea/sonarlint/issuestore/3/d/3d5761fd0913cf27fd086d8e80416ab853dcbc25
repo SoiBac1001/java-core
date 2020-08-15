@@ -1,26 +1,26 @@
 
-U	java:S106"9Replace this use of System.out or System.err by a logger.(™î¦ß8ÅŞèÙ·.
-N
-java:S1874$",Remove this use of "Test"; it is deprecated.(ƒĞŠÄÿÿÿÿÿ8¬»Û·.
-B
-java:S1068"%Remove this unused "n" private field.(üõÂÕ8ÅŞèÙ·.
-U	java:S1060"9Replace this use of System.out or System.err by a logger.(à×½™8ÅŞèÙ·.
-E
-java:S1123	"(Add the missing @deprecated Javadoc tag.(‹çÜº8¬»Û·.
 I
 java:S1144",Remove this unused private "method3" method.(êˆ‹Ù8ÅŞèÙ·.
-Z	java:S106@"9Replace this use of System.out or System.err by a logger.(„ïĞ°üÿÿÿÿ8ÅŞèÙ·.
+U	java:S1063"9Replace this use of System.out or System.err by a logger.(ö±ßå8¼Ä‡Û·.
 R
 java:S1133	"5Do not forget to remove this deprecated code someday.(‹çÜº8¬»Û·.
-Z	java:S106*"9Replace this use of System.out or System.err by a logger.(”³øÿÿÿÿ8ÅŞèÙ·.
 U	java:S1065"9Replace this use of System.out or System.err by a logger.(ã‡ûÛ8¸Ó’Û·.
-]	java:S125%"<This block of commented-out lines of code should be removed.(÷Á°şÿÿÿÿ8ÅŞèÙ·.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ë»£ıÿÿÿÿ8ÅŞèÙ·.
-U	java:S1068"9Replace this use of System.out or System.err by a logger.(ãÙƒ8ÅŞèÙ·.
-Z
-java:S1197""8Move the array designator from the variable to the type.(ùï¾ÿÿÿÿÿ8ÅŞèÙ·.
 U	java:S106"9Replace this use of System.out or System.err by a logger.(üªœß8ÅŞèÙ·.
+Z	java:S106@"9Replace this use of System.out or System.err by a logger.(„ïĞ°üÿÿÿÿ8ÅŞèÙ·.
+E
+java:S1123	"(Add the missing @deprecated Javadoc tag.(‹çÜº8¬»Û·.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ë»£ıÿÿÿÿ8ÅŞèÙ·.
+]	java:S125%"<This block of commented-out lines of code should be removed.(÷Á°şÿÿÿÿ8ÅŞèÙ·.
 N
 java:S1874$",Remove this use of "Test"; it is deprecated.(ƒĞŠÄÿÿÿÿÿ8¬»Û·.
-U	java:S1063"9Replace this use of System.out or System.err by a logger.(ö±ßå8¼Ä‡Û·.
+Z
+java:S1197""8Move the array designator from the variable to the type.(ùï¾ÿÿÿÿÿ8ÅŞèÙ·.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(™î¦ß8ÅŞèÙ·.
 U	java:S106R"9Replace this use of System.out or System.err by a logger.(” ‘8ÅŞèÙ·.
+N
+java:S1874$",Remove this use of "Test"; it is deprecated.(ƒĞŠÄÿÿÿÿÿ8¬»Û·.
+U	java:S1060"9Replace this use of System.out or System.err by a logger.(à×½™8ÅŞèÙ·.
+U	java:S1068"9Replace this use of System.out or System.err by a logger.(ãÙƒ8ÅŞèÙ·.
+B
+java:S1068"%Remove this unused "n" private field.(üõÂÕ8ÅŞèÙ·.
+Z	java:S106*"9Replace this use of System.out or System.err by a logger.(”³øÿÿÿÿ8ÅŞèÙ·.
