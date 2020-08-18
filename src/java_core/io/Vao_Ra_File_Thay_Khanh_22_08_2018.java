@@ -14,7 +14,7 @@ import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java_io_doc_ghi_du_lieu_object.SinhVien; // import (tên gói).(tên class)
+import java_core.io.doc_ghi_du_lieu_object.SinhVien; // import (tên gói).(tên class)
 
 /**
  *
