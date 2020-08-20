@@ -1,5 +1,9 @@
 package OCA.test2;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class Bandwidth {
     public int available = 0;
     public int getAvailable(){
@@ -26,6 +30,10 @@ public class Bandwidth {
     }
 
     public static void main(String[] args) {
+        testDate();
+        System.out.println("hello" + new String("world"));
+        System.out.println(new StringBuilder("world").insert(0, "hello").toString());
+
         long bigInt = 3123456789L;
         System.out.println(bigInt);
         System.out.println(017);
@@ -33,5 +41,14 @@ public class Bandwidth {
         Boolean b = Boolean.parseBoolean("True");
         Boolean b2 = new Boolean("true");
         //        addMore();
+    }
+
+    private static void testDate(){
+//        LocalDateTime greatDay = LocalDateTime.parse("2015-01-01"); // DateTimeParseException
+        LocalDateTime greatDay2 = LocalDateTime.parse("2007-12-03T10:15:30");
+        LocalDate parse = LocalDate.parse("2015-01-01");
+        System.out.println(parse);
+        String format = greatDay2.format(DateTimeFormatter.ISO_DATE_TIME);
+        System.out.println(format);
     }
 }
