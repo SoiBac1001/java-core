@@ -26,6 +26,12 @@ public class Bandwidth {
     }
 
     public static void main(String[] args) {
-        addMore();
+        long bigInt = 3123456789L;
+        System.out.println(bigInt);
+        System.out.println(017);
+        System.out.println("Hello");
+        Boolean b = Boolean.parseBoolean("True");
+        Boolean b2 = new Boolean("true");
+        //        addMore();
     }
 }

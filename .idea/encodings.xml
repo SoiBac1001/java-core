@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/../../../../workspace-sts-4/demo-web/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/../../../../workspace-sts-4/demo-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../workspace-sts-4/BE_Demo-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../workspace-sts-4/BE_Demo-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../workspace-sts-4/CHAT/SpringAngularWebSocket-master/websocket-backend/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../workspace-sts-4/CHAT/SpringAngularWebSocket-master/websocket-backend/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../workspace-sts-4/CHAT/angular8-springboot-websocket-master/backend/springboot-stomp-websocket/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../workspace-sts-4/CHAT/angular8-springboot-websocket-master/backend/springboot-stomp-websocket/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../workspace-sts-4/CHAT/spring-boot-websocket-chat-demo-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../workspace-sts-4/CHAT/spring-boot-websocket-chat-demo-master/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../workspace-sts-4/CHAT/wechat-master/wechat-backend/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../../../workspace-sts-4/CHAT/wechat-master/wechat-backend/src/main/resources" charset="UTF-8" />
   </component>
 </project>

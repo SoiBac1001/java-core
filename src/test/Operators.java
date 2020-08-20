@@ -6,6 +6,7 @@ public class Operators {
         // bằng cách dùng toán tử dịch bit trái
         // long: 64 bit
         long result = 0;
+
         for (int i = 5; i < 10; i++) {
             result |= (1L << i);
 //            result |= i;

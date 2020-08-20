@@ -1,7 +1,13 @@
 package OCA;
 
 public class Cougar extends Puma {
-    public static void main(String[] args) {
+    static public void main(String[] args) {
+        int b;
+        {
+           b  = 6;
+        }
+        b = 8;
+
         System.out.println(4 % 3);
         Puma puma = new Puma();
         System.out.println(puma.getTailLength());

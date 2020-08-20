@@ -9,8 +9,6 @@ C
 VD day so/input.txt,e\f\ef26a2ca10065cf9abe8f570074bd9b7a22a2597
 L
 src/java_core/Java_Core.java,7\8\7890b2cad1cb0bfe3cf18737b5885d2bb2da7e70
-`
-0src/java_io_doc_ghi_du_lieu_object/SinhVien.java,6\f\6f7f791b06f53b903447d5c800274a8e95e33f13
 L
 src/java_core/Enum_Java.java,e\4\e4e72f6d1b8e9e1599a783d5798bfbd67d68a466
 M
@@ -92,3 +90,29 @@ G
 src/test/Operators.java,3\6\3630544ee0ee2b95c0d57f5dfda2c8bd3c41c556
 D
 src/test/HeCoSo.java,a\6\a65488cc948106a5892342ccc3595d1bb828cd7a
+g
+7src/java_core/io/Vao_Ra_File_Thay_Khanh_22_08_2018.java,f\e\fe7836351246050fdac781ea563b8be510153449
+R
+"src/java_thread/thread_1/Main.java,3\c\3cfab4477cad137589eab9390a9ff5fcb5b4a06d
+W
+'src/java_thread/thread_1/MyThread1.java,9\e\9e5d5ea2cf80ad8bdc9955aa95f5eece3ebe9612
+W
+'src/java_thread/thread_1/MyThread2.java,4\3\431bcd92f04da8b458036d38f4e2c5dea2c3b58d
+X
+(src/java_thread/thread_1/TestThread.java,2\0\20276d236b6151e1a21fa3627046dc9df87ea1a5
+Y
+)src/java_thread/thread_1/TestThread2.java,5\9\59e5a287dec4db937c8e1770a1f75acb5df35182
+Y
+)src/java_thread/thread_1/TestThread3.java,0\0\00f5a93e59338ccd3630574c2f67a1a34b0a02d8
+Z
+*src/java_thread/thread_1/Interruption.java,2\0\2054915d585102b1b2515bb5cb4ca1faa6ce0282
+Z
+*src/java_thread/thread_1/ThreadSample.java,8\5\85b98f4d70227c5c5e27da61f8e2a6a743e6b16a
+j
+:src/java_core/functional_interface/predicate/Employee.java,2\f\2fd08354031a9d262e12847d4b5befd74be5c521
+M
+src/java_core/InvalidAge.java,e\f\eff26b8e2e673e226717e9b450ca5748bb0ee974
+s
+Csrc/java_core/functional_interface/predicate/PredicateExample1.java,e\2\e2defe57758b1f6d904949bae6f5a67d92f141ba
+t
+Dsrc/java_core/functional_interface/predicate/EmployeePredicates.java,3\8\38aa219d95c13cfd4bf096d12d6e771cbd76cf38

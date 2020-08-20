@@ -1,7 +1,17 @@
 
-S	java:S106"9Replace this use of System.out or System.err by a logger.(üýî…ýÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(µÏ…èùÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(Üž žùÿÿÿÿ
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©÷¯³
+a
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(ÖÌÑW8±¨¼§À.
+W
+java:S1854	"5Remove this useless assignment to local variable "b".(å¿„ÿùÿÿÿÿ8â­‡¨À.
+W
+java:S1854"5Remove this useless assignment to local variable "b".(úÈçÊùÿÿÿÿ8â­‡¨À.
 P
-java:S1161":Add the "@Override" annotation above this method signature(š‡†‹
+java:S1161":Add the "@Override" annotation above this method signature(š‡†‹
+O
+java:S1199"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8â˜†¨À.
+C
+java:S1481"&Remove this unused "b" local variable.(ØÝê±8â­‡¨À.
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Üž žùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(µÏ…èùÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(©÷¯³
+S	java:S106"9Replace this use of System.out or System.err by a logger.(üýî…ýÿÿÿÿ
