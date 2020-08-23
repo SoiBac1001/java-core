@@ -13,6 +13,16 @@ class Main{
         s.someMethod();
     }
     public static void someMethod(){
+        String myStr = "good";
+        char[] myCharArr = {'g', 'o', 'o', 'd'};
+        String newStr = null;
+        for (char c : myCharArr){
+            newStr = newStr + c;
+        }
+        System.out.println(newStr);
+        System.out.println(myStr);
+        System.out.println(newStr == myStr);
+        System.out.println(newStr.equals(myStr));
 //        System.out.println(i);
     }
 }
