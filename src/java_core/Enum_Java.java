@@ -18,15 +18,19 @@ public class Enum_Java {
 	// Enum có thể có các trường, phương thức và Constructor
     enum COLOR{
     	RED(5), YELLOW(2), BLUE(10);
+
     	private int value;
 
 		private COLOR(int value) { // Constructor của enum trong java là private. Khi bạn không khai báo là private thì trình biên dịch sẽ tạo ra Constructor private.
+            System.out.println("Constructor called for: " + this.toString());
 			this.value = value;
 		}
     	
     }
     
     public static void main(String[] args) {
+        COLOR red = COLOR.valueOf("RED");
+        red.ordinal();
         System.out.println(COLOR.BLUE); // BLUE
         COLOR c = COLOR.RED;
         System.out.println(c); // RED

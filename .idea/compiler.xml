@@ -7,29 +7,35 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringAngularWebSocket.websocket" />
+        <module name="[Example 3]_Angular8 Springboot Websocket.springboot-stomp-websocket" />
         <module name="Demo Web By SB1001.webdemo" />
-        <module name="Wechat [Remove].wechat-backend" />
-        <module name="websocket-demo" />
-        <module name="Angular8 Springboot Websocket.springboot-stomp-websocket" />
+        <module name="[Example 2]_websokets.spring-boot-websockets" />
         <module name="file-demo" />
+        <module name="websocket-demo" />
+        <module name="spring-boot-send-email" />
+        <module name="[Remove]_Wechat.wechat-backend" />
+        <module name="test-camunda" />
+        <module name="[Example 1]_SpringAngularWebSocket.websocket" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Angular8 Springboot Websocket.springboot-stomp-websocket" target="1.8" />
+      <module name="[Example 1]_SpringAngularWebSocket.websocket" target="1.8" />
+      <module name="[Example 2]_websokets.spring-boot-websockets" target="1.8" />
+      <module name="[Example 3]_Angular8 Springboot Websocket.springboot-stomp-websocket" target="1.8" />
+      <module name="[Remove]_Wechat.wechat-backend" target="1.5" />
       <module name="Demo Web By SB1001.webdemo" target="1.8" />
       <module name="file-demo" target="1.8" />
       <module name="socket" target="1.5" />
-      <module name="SpringAngularWebSocket.websocket" target="1.8" />
+      <module name="spring-boot-send-email" target="1.5" />
+      <module name="test-camunda" target="1.8" />
       <module name="websocket-demo" target="1.8" />
-      <module name="Wechat [Remove].wechat-backend" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Angular8 Springboot Websocket.springboot-stomp-websocket" options="-parameters" />
       <module name="Demo Web By SB1001.webdemo" options="-parameters" />
-      <module name="SpringAngularWebSocket.websocket" options="-parameters" />
+      <module name="[Example 1]_SpringAngularWebSocket.websocket" options="-parameters" />
+      <module name="[Example 3]_Angular8 Springboot Websocket.springboot-stomp-websocket" options="-parameters" />
       <module name="file-demo" options="-parameters" />
       <module name="websocket-demo" options="-parameters" />
     </option>
