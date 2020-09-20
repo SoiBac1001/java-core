@@ -10,11 +10,12 @@
         <module name="[Example 3]_Angular8 Springboot Websocket.springboot-stomp-websocket" />
         <module name="Demo Web By SB1001.webdemo" />
         <module name="[Example 2]_websokets.spring-boot-websockets" />
-        <module name="file-demo" />
+        <module name="MAILS.spring-boot-send-email" />
         <module name="websocket-demo" />
-        <module name="spring-boot-send-email" />
-        <module name="[Remove]_Wechat.wechat-backend" />
         <module name="test-camunda" />
+        <module name="[Remove]_Wechat.wechat-backend" />
+        <module name="MAILS.fakesmtp" />
+        <module name="file-demo" />
         <module name="[Example 1]_SpringAngularWebSocket.websocket" />
       </profile>
     </annotationProcessing>
@@ -25,8 +26,9 @@
       <module name="[Remove]_Wechat.wechat-backend" target="1.5" />
       <module name="Demo Web By SB1001.webdemo" target="1.8" />
       <module name="file-demo" target="1.8" />
+      <module name="MAILS.fakesmtp" target="1.6" />
+      <module name="MAILS.spring-boot-send-email" target="1.5" />
       <module name="socket" target="1.5" />
-      <module name="spring-boot-send-email" target="1.5" />
       <module name="test-camunda" target="1.8" />
       <module name="websocket-demo" target="1.8" />
     </bytecodeTargetLevel>
