@@ -1,4 +1,26 @@
 
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‚æŠĞ
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(÷ğİÒùÿÿÿÿ8ßâê§°.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(–Î’©ùÿÿÿÿ8ßâê§°.
+m	java:S128"LEnd this switch case with an unconditional break, return or throw statement.(¼ßõ‚ûÿÿÿÿ8ÎÔåõÏ.
+Z	java:S106#"9Replace this use of System.out or System.err by a logger.(öˆµüıÿÿÿÿ8ÎÔåõÏ.
+T	java:S106"9Replace this use of System.out or System.err by a logger.(ÜÄ™g8ÎÔåõÏ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8ÎÔåõÏ.
+Z	java:S106+"9Replace this use of System.out or System.err by a logger.(÷ğİÒùÿÿÿÿ8ßâê§°.
+X
+java:S1119";Refactor the code to remove this label and the need for it.(ÑÃôÚ8ÎÔåõÏ.
+T	java:S106"9Replace this use of System.out or System.err by a logger.(ÜÄ™g8ÎÔåõÏ.
+i
+java:S1871	"GThis case's code block is the same as the block for the case on line 7.(úâúÿÿÿÿ8ÎÔåõÏ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(‘Ô¶Œúÿÿÿÿ8ÎÔåõÏ.
+m
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(á×Ëşÿÿÿÿ8ÎÔåõÏ.
+Z	java:S106
+"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8ÎÔåõÏ.
+C	java:S131""Add a default case to this switch.(®–³øÿÿÿÿ8ÎÔåõÏ.
+m	java:S128"LEnd this switch case with an unconditional break, return or throw statement.(ªëÅŞúÿÿÿÿ8ÎÔåõÏ.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ô·ê8ÎÔåõÏ.
+Z	java:S106*"9Replace this use of System.out or System.err by a logger.(–Î’©ùÿÿÿÿ8ßâê§°.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ã”…ªûÿÿÿÿ8ÆÏèõÏ.
+U	java:S106&"9Replace this use of System.out or System.err by a logger.(ÄèÇ¥8ÎÔåõÏ.
+C	java:S131""Add a default case to this switch.(á×Ëşÿÿÿÿ8ÎÔåõÏ.
+Z	java:S106 "9Replace this use of System.out or System.err by a logger.(‰ì±Àùÿÿÿÿ8ÎÔåõÏ.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ú‰Ç¸8¨À…öÏ.

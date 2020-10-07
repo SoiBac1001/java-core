@@ -24,13 +24,16 @@ public class Bandwidth {
 
     public static boolean addMore(){
         int rate = 10;
-        double amount = 1 - rate/100*1 - rate/100;
-        int amount2 = 1 - rate/100*1 - rate/100;
-        System.out.println(amount + " - " + amount2);
+        double amount = 1 - rate/100.0*1 - rate/100;
+        double amount3 = 1 - rate/100.0*1 - rate/100;
+        int amount2 = 1 - rate/100*2 - rate/100;
+        System.out.println(amount + " - " + amount2 + " - " + amount3);
         return true;
     }
 
     public static void main(String[] args) {
+        addMore();
+        System.out.println(args);
         testString();
         testDate();
         System.out.println("hello" + new String("world"));
@@ -42,7 +45,6 @@ public class Bandwidth {
         System.out.println("Hello");
         Boolean b = Boolean.parseBoolean("True");
         Boolean b2 = new Boolean("true");
-        //        addMore();
     }
 
     private static void testDate(){
