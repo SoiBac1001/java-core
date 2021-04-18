@@ -1,26 +1,79 @@
 
+W
+java:S1854@"5Remove this useless assignment to local variable "m".(ğ›óıÿÿÿÿ8§¯§Ğ.
+^
+java:S1854Y"<Remove this useless assignment to local variable "hexFloat".(Û‹Ö’øÿÿÿÿ8¹ö­Ğ.
+R
+java:S1854W"5Remove this useless assignment to local variable "b".(ì„ûÖ8„Ãê­Ğ.
+Z	java:S106 "9Replace this use of System.out or System.err by a logger.(‘Ô¶Œúÿÿÿÿ8ÎÔåõÏ.
+Z
+java:S2130@"8Use "Long.parseLong" for this string-to-long conversion.(ğ›óıÿÿÿÿ8¤Ğ.
+Z	java:S106U"9Replace this use of System.out or System.err by a logger.(Şíş‡øÿÿÿÿ8õä³­Ğ.
+m	java:S128R"LEnd this switch case with an unconditional break, return or throw statement.(ÌÊëÎüÿÿÿÿ8õä³­Ğ.
+T	java:S106"9Replace this use of System.out or System.err by a logger.(ÜÄ™g8ÎÔåõÏ.
+Z	java:S106	"9Replace this use of System.out or System.err by a logger.(£º¾¬øÿÿÿÿ8àñšëÑ.
+E
+java:S1481Z"(Remove this unused "$oi" local variable.(ñßñê8¸ÿğëÑ.
+X	java:S1253"<This block of commented-out lines of code should be removed.(Ú°à¬8ƒĞ.
+g
+java:S13012"KReplace this "switch" statement by "if" statements to increase readability.(ìúÇV8ƒĞ.
+U
+java:S2130?"8Use "Long.parseLong" for this string-to-long conversion.(®áŞÜ8ìµ¦Ğ.
+[
+java:S4973I"9Use the "equals" method if value comparison was intended.(á„í¢øÿÿÿÿ8æá„ Ğ.
+C	java:S131""Add a default case to this switch.(á×Ëşÿÿÿÿ8ÎÔåõÏ.
+m	java:S128"LEnd this switch case with an unconditional break, return or throw statement.(ªëÅŞúÿÿÿÿ8ÎÔåõÏ.
+U	java:S106S"9Replace this use of System.out or System.err by a logger.(¨Ô…‹8õä³­Ğ.
+O
+java:S1481Y"-Remove this unused "hexFloat" local variable.(Û‹Ö’øÿÿÿÿ8¹ö­Ğ.
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‚æŠĞ
-m	java:S128"LEnd this switch case with an unconditional break, return or throw statement.(¼ßõ‚ûÿÿÿÿ8ÎÔåõÏ.
-Z	java:S106#"9Replace this use of System.out or System.err by a logger.(öˆµüıÿÿÿÿ8ÎÔåõÏ.
-T	java:S106"9Replace this use of System.out or System.err by a logger.(ÜÄ™g8ÎÔåõÏ.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8ÎÔåõÏ.
-Z	java:S106+"9Replace this use of System.out or System.err by a logger.(÷ğİÒùÿÿÿÿ8ßâê§°.
-X
-java:S1119";Refactor the code to remove this label and the need for it.(ÑÃôÚ8ÎÔåõÏ.
-T	java:S106"9Replace this use of System.out or System.err by a logger.(ÜÄ™g8ÎÔåõÏ.
-i
-java:S1871	"GThis case's code block is the same as the block for the case on line 7.(úâúÿÿÿÿ8ÎÔåõÏ.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(‘Ô¶Œúÿÿÿÿ8ÎÔåõÏ.
+C
+java:S1481W"&Remove this unused "b" local variable.(ì„ûÖ8„Ãê­Ğ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8ÎÔåõÏ.
+Z	java:S106L"9Replace this use of System.out or System.err by a logger.(÷¤îøûÿÿÿÿ8¯º‚ Ğ.
+Z	java:S106M"9Replace this use of System.out or System.err by a logger.(åıÿ¼úÿÿÿÿ8Óˆ Ğ.
+U	java:S106#"9Replace this use of System.out or System.err by a logger.(Ô·ê8ÎÔåõÏ.
+Z	java:S106I"9Replace this use of System.out or System.err by a logger.(á„í¢øÿÿÿÿ8¯º‚ Ğ.
+>	java:S131Q""Add a default case to this switch.(ˆ¸£Ô8õä³­Ğ.
+R
+java:S1854A"5Remove this useless assignment to local variable "m".(æË´È8Ç¦ªĞ.
+m	java:S128"LEnd this switch case with an unconditional break, return or throw statement.(âØ¬øÿÿÿÿ8½à²ƒĞ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8ÎÔåõÏ.
+=	java:S1312""Add a default case to this switch.(ìúÇV8ƒĞ.
+X	java:S125<"<This block of commented-out lines of code should be removed.(ÅùÏ×8ù˜ƒĞ.
+Z	java:S106C"9Replace this use of System.out or System.err by a logger.(…×“¨ıÿÿÿÿ8ƒÄ¢­Ğ.
+Z	java:S1060"9Replace this use of System.out or System.err by a logger.(–Î’©ùÿÿÿÿ8ßâê§°.
+x
+java:S2159N"VRemove this call to "equals"; comparisons between unrelated types always return false.(Ã®°ãúÿÿÿÿ8è§‰ Ğ.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ú‰Ç¸8¨À…öÏ.
 m
-java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(á×Ëşÿÿÿÿ8ÎÔåõÏ.
-Z	java:S106
-"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ8ÎÔåõÏ.
-C	java:S131""Add a default case to this switch.(®–³øÿÿÿÿ8ÎÔåõÏ.
-m	java:S128"LEnd this switch case with an unconditional break, return or throw statement.(ªëÅŞúÿÿÿÿ8ÎÔåõÏ.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(Ô·ê8ÎÔåõÏ.
-Z	java:S106*"9Replace this use of System.out or System.err by a logger.(–Î’©ùÿÿÿÿ8ßâê§°.
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ã”…ªûÿÿÿÿ8ÆÏèõÏ.
-U	java:S106&"9Replace this use of System.out or System.err by a logger.(ÄèÇ¥8ÎÔåõÏ.
-C	java:S131""Add a default case to this switch.(á×Ëşÿÿÿÿ8ÎÔåõÏ.
-Z	java:S106 "9Replace this use of System.out or System.err by a logger.(‰ì±Àùÿÿÿÿ8ÎÔåõÏ.
-U	java:S106"9Replace this use of System.out or System.err by a logger.(Ú‰Ç¸8¨À…öÏ.
+java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(á×Ëşÿÿÿÿ8ÎÔåõÏ.
+R
+java:S1854?"5Remove this useless assignment to local variable "m".(®áŞÜ8ìµ¦Ğ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ïø÷¿üÿÿÿÿ8ÖâıêÑ.
+Z	java:S1061"9Replace this use of System.out or System.err by a logger.(÷ğİÒùÿÿÿÿ8ßâê§°.
+W
+java:S18548"5Remove this useless assignment to local variable "b".(ğ«Ä§ıÿÿÿÿ8ƒĞ.
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ã”…ªûÿÿÿÿ8ÆÏèõÏ.
+>
+java:S2129E"!Remove this "Integer" constructor(ºàÒ×8×¦ÿŸĞ.
+]
+java:S1119";Refactor the code to remove this label and the need for it.(·óï—ûÿÿÿÿ8ÎÔåõÏ.
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(‰ì±Àùÿÿÿÿ8ÎÔåõÏ.
+j
+java:S1871"HThis case's code block is the same as the block for the case on line 12.(úâúÿÿÿÿ8ÎÔåõÏ.
+]	java:S125:"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ8ƒĞ.
+x
+java:S2159M"VRemove this call to "equals"; comparisons between unrelated types always return false.(åıÿ¼úÿÿÿÿ8êıˆ Ğ.
+C
+java:S1481?"&Remove this unused "m" local variable.(®áŞÜ8ìµ¦Ğ.
+T	java:S106"9Replace this use of System.out or System.err by a logger.(ÜÄ™g8ÎÔåõÏ.
+Z	java:S106N"9Replace this use of System.out or System.err by a logger.(Ã®°ãúÿÿÿÿ8Óˆ Ğ.
+C
+java:S1481P"&Remove this unused "t" local variable.(ŠñÊ‘8‡ó·­Ğ.
+U	java:S106J"9Replace this use of System.out or System.err by a logger.(µ´ Ÿ8¯º‚ Ğ.
+h
+java:S1301Q"KReplace this "switch" statement by "if" statements to increase readability.(ˆ¸£Ô8õä³­Ğ.
+Z	java:S106)"9Replace this use of System.out or System.err by a logger.(öˆµüıÿÿÿÿ8ÎÔåõÏ.
+U	java:S106,"9Replace this use of System.out or System.err by a logger.(ÄèÇ¥8ÎÔåõÏ.
+m	java:S117Z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñßñê8¸ÿğëÑ.

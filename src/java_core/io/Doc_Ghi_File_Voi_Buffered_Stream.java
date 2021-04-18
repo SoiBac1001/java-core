@@ -51,13 +51,22 @@ public class Doc_Ghi_File_Voi_Buffered_Stream {
         BufferedReader bfr = null;
         BufferedWriter bfw = null;
         try{
-            FileReader r = new FileReader("C:\\Users\\os_baonv\\Desktop\\JAVA\\input.txt");
-            FileWriter w = new FileWriter("C:\\Users\\os_baonv\\Desktop\\JAVA\\output.txt");
+            FileReader r = new FileReader("E:\\Project\\work\\Fresher Java\\Java Core + Thread\\Java_Core\\src\\java_core\\io\\source\\input.txt");
+            FileWriter w = new FileWriter("E:\\Project\\work\\Fresher Java\\Java Core + Thread\\Java_Core\\src\\java_core\\io\\source\\output.txt", true);
             bfr = new BufferedReader(r);         
             bfw = new BufferedWriter(w);
             int c;
-            while((c = bfr.read()) != -1) // Đọc một ký tự và gán cho c. Trả về -1 nếu cuối luồng.
+            /*while((c = bfr.read()) != -1) { // Đọc một ký tự và gán cho c. Trả về -1 nếu cuối luồng.
+                System.out.println(c);
                 bfw.write(c); // Ghi ký tự c được biểu diễn bằng số nguyên
+                break;
+            }*/
+
+            String line;
+            while((line = bfr.readLine()) != null) { // Đọc một ký tự và gán cho c. Trả về -1 nếu cuối luồng.
+                System.out.println(line);
+                bfw.write("\n" + line); // Ghi ký tự c được biểu diễn bằng số nguyên
+            }
         } finally{
             if(bfr != null)
                 bfr.close();

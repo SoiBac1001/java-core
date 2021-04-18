@@ -7,6 +7,9 @@ public class Employee {
     private String firstName;
     private String lastName;
 
+    public Employee() {
+    }
+
     public Employee(Integer id, Integer age, String gender, String fName, String lName) {
         this.id = id;
         this.age = age;
@@ -33,6 +36,26 @@ public class Employee {
 
     public String getLastName() {
         return lastName;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     @Override
