@@ -7,12 +7,17 @@ package java_core.io;
 
 import java.io.File;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
-import java.util.Scanner;
+import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  *
@@ -20,8 +25,46 @@ import java.util.Scanner;
  */
 public class Doc_Ghi_File_Text_2 {
     public static void main(String[] args) {
-        System.out.println(ChronoUnit.DAYS.between(LocalDate.parse("2021-04-09"), LocalDate.now()));
+        Doc_File doc_file1 = new Doc_File();
+        Doc_File doc_file2 = new Doc_File();
+        System.out.println(doc_file1.equals(doc_file2));
+
+        List<String> soList = buildRemainedSoList();
+        System.out.println(soList);
+        System.out.println(sumCapitalAmount());
+        LocalDate startDate = LocalDate.parse("2021-04-15");
+        LocalDate endDate = LocalDate.parse("2021-05-15");
+        System.out.println(ChronoUnit.MONTHS.between(startDate, endDate));
+        System.out.println(new BigDecimal(139979.6).divide(BigDecimal.valueOf(ChronoUnit.MONTHS.between(startDate, endDate)),
+                2, RoundingMode.HALF_UP));
+        System.out.println(new BigDecimal(139979.6).divide(BigDecimal.valueOf(ChronoUnit.MONTHS.between(startDate, endDate)), RoundingMode.HALF_UP));
+        int rowNum1 = 3;
+        int rowNum2 = 3;
+        System.out.println(twoLargest(new int[]{1, 6, 7, 2, 3}, rowNum1++));
+        System.out.println(twoLargest(new int[]{1, 6, 7, 2, 3}, ++rowNum2));
+        printTwoMaxNumberWithoutSortMethod(new int[]{1, 6, 8, 6, 7});
+        System.out.println(BigDecimal.valueOf(-6000).subtract(BigDecimal.TEN));
         System.out.println(isKep("33"));
+        System.out.println(isKep("34"));
+
+        Integer viTri1 = 30000;
+        Integer viTri2 = 30000;
+        calculate(viTri1, viTri2);
+        BigDecimal totalAllCapitalAmount = BigDecimal.ZERO;
+        test(totalAllCapitalAmount);
+        Integer iTest = 300;
+        Integer jTest = 300;
+        System.out.println(iTest == 300);
+        System.out.println(iTest.compareTo(300) > -1);
+        int number = 3;
+        float number2 = 4;
+        float remainder = 140 % number;
+        System.out.println(remainder == 0 ? 140/number : (140/number + 1));
+        System.out.println(Math.round(140/number));
+        System.out.println(Math.round(141/number2));
+//        requireNotNullObjects(null, null);
+        System.out.println(ChronoUnit.DAYS.between(LocalDate.parse("2021-04-13"), LocalDate.parse("2021-04-16")));
+
         BigDecimal capitalAmount = BigDecimal.ONE;
         System.out.println(capitalAmount.multiply(BigDecimal.TEN));
         System.out.println(capitalAmount);
@@ -73,6 +116,46 @@ public class Doc_Ghi_File_Text_2 {
         } catch (Exception e) {
         }
 */
+    }
+
+    public static int[] twoLargest(int values[], int rowNum){
+        System.out.println(rowNum);
+        int largestA = Integer.MIN_VALUE, largestB = Integer.MIN_VALUE;
+
+        for(int value : values) {
+            if(value > largestA) {
+                largestB = largestA;
+                largestA = value;
+            } else if (largestB < value  && value < largestA) {
+                largestB = value;
+            }
+        }
+        return new int[] { largestA, largestB };
+    }
+
+    private static void printTwoMaxNumberWithoutSortMethod(int[] input) {
+        int max=0,lastMax=0;
+        lastMax=input[0];
+        max=input[0];
+        for(int i=1;i<input.length;i++)
+        {
+            if(lastMax<input[i] & max<input[i])
+            {
+                lastMax=max;
+                max=input[i];
+
+            }
+        }
+        System.out.println("lastMax="+lastMax+" : max="+max);
+
+    }
+
+    private static void requireNotNullObjects(Object...objects){
+        for(Object object : objects){
+            if(object == null){
+                throw new IllegalArgumentException("All param must not be null");
+            }
+        }
     }
 
     public static boolean isKep(String so){
@@ -139,5 +222,88 @@ public class Doc_Ghi_File_Text_2 {
             giai.append(text, i, i + lengthOfNumber);
         }
         return giai.toString();
+    }
+
+    private static void test(BigDecimal totalAllCapitalAmount){
+//        String str = "➤ Total profit amount -16892.0k on 01-05-2021";
+        String str = "➤ Total profit amount 16892.0k on 01-05-2021";
+
+//        Pattern pattern2 = Pattern.compile("-?[0-9]+");
+        Pattern pattern = Pattern.compile("-?\\d+");
+        Matcher matcher = pattern.matcher(str);
+        if (matcher.find()) {
+            int value = Integer.parseInt(matcher.group());
+            System.out.println(value);
+        }
+
+        String strDate = "Chủ nhật ngày 16-05-2021";
+        pattern = Pattern.compile("(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\\d\\d");
+        matcher = pattern.matcher(strDate);
+        if (matcher.find()) {
+            String date = matcher.group();
+            System.out.println(date);
+        }
+
+        totalAllCapitalAmount = totalAllCapitalAmount.add(new BigDecimal(10));
+        Map<Integer, List<String>> diemAndSoMap = new HashMap<>();
+        List<String> soList = Arrays.asList("10", "50", "70", "12");
+        int diem = 140;
+        int numberOfAccounts = 3;
+        int remainder = diem % numberOfAccounts;
+        int avgDiem = diem / numberOfAccounts;
+//					splitDiem = remainder == 0 ? splitDiem : (splitDiem + 1);
+//                    int splitDiem = Math.round(diem / numberOfAccounts);
+        for (int i = 0; i < numberOfAccounts; i++){
+            if (remainder + i == numberOfAccounts){
+                avgDiem++;
+            }
+
+            putValueSameKeyToMap(diemAndSoMap, avgDiem, soList);
+        }
+    }
+
+    private static void calculate(int viTri1, int viTri2){
+        if(viTri1 == 30000){
+            System.out.println(viTri1 + ", " + viTri2);
+        }
+    }
+
+    private static <T, X> void putValueSameKeyToMap(Map<T, List<X>> map, T key, List<X> values){
+//        CommonUtils.requireNonNullObjects(values);
+        if (map.containsKey(key)) {
+            map.get(key).addAll(values);
+        } else {
+            List<X> newValues = new ArrayList<>(values);
+            map.put(key, newValues);
+        }
+    }
+
+    private static long sumCapitalAmount(){
+        List<Integer> numbers = Arrays.asList(374247,5589,5157,5103,2646,2646,2646,2646,2619,2511,972,972,972,972,972,972,945,918,432,432,432,432,432,405,378,378,297,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,162,135,135,135,135,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,54,27,27,27,27);
+        long total = 0;
+        for(Integer i : numbers){
+            total += i;
+        }
+
+        return total - 306423;
+    }
+
+    private static List<String> buildRemainedSoList(){
+        List<String> remainedSoList = new ArrayList<>();
+        Set<String> allLastTwoDigits = Stream.of(13, 15, 20, 22, 23, 25, 28, 31, 31, 39, 39, 42, 42, 46, 46, 52, 55, 61, 62, 66, 68, 71, 75, 82, 84, 98, 99)
+                .map(String::valueOf).collect(Collectors.toSet());
+
+        for(int i = 0; i <= 9; i++){
+            for(int j = 0; j <= 9; j++){
+                String so = i + "" + j;
+                if(!allLastTwoDigits.contains(so)){
+                    remainedSoList.add(so);
+                }
+            }
+        }
+
+        Collections.shuffle(remainedSoList);
+
+        return remainedSoList;
     }
 }

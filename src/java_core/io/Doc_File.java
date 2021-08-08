@@ -45,4 +45,9 @@ public class Doc_File {
         }
         
     }
+
+    @Override
+    public int hashCode() {
+        return 1;
+    }
 }
