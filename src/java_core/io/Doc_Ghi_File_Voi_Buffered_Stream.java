@@ -23,6 +23,7 @@ import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.LocalDate;
 import java.util.*;
 
 /**
@@ -31,6 +32,8 @@ import java.util.*;
  */
 public class Doc_Ghi_File_Voi_Buffered_Stream {
     public static void main(String[] args) throws IOException {
+        System.out.println(Arrays.asList("20,21,22".split(",")));
+        System.out.println(LocalDate.parse("2021-01-23").minusDays(14));
         separateDuplicatedList();
         ArrayList<String> mylist = new ArrayList<String>();
         mylist.add("migOa8love");
@@ -87,7 +90,7 @@ public class Doc_Ghi_File_Voi_Buffered_Stream {
             String line;
             while((line = bfr.readLine()) != null) { // Đọc một ký tự và gán cho c. Trả về -1 nếu cuối luồng.
                 System.out.println(line);
-                bfw.write("\n\t" + line); // Ghi ký tự c được biểu diễn bằng số nguyên
+//                bfw.write("\n\t" + line); // Ghi ký tự c được biểu diễn bằng số nguyên
             }
         } finally{
             if(bfr != null)
