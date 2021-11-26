@@ -29,9 +29,9 @@ public class TestThread3 extends Thread{
 		t2.setPriority(10);
 		t3.setPriority(5);
 		
-		/*t1.start();
+		t1.start();
 		t2.start();
-		t3.start();*/
+		t3.start();
 		
 		// deamon thread: là những thread chạy ở background // là những thread chạy ngầm: như chương trình dọn rác,...
 		t1.setDaemon(true);

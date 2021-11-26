@@ -9,11 +9,11 @@ public class ThreadDemo extends Thread {
 
     @Override
     public void run() {
-        System.out.println("Running " + threadName);
+        System.out.println("\nRunning " + threadName);
 
         try {
             for (int i = 4; i >= 0; i--) {
-                System.out.println("Thread: " + threadName + ", " + i);
+                System.out.println("Thread: " + threadName + ", " + "\tso: " + i);
                 // Let the thread sleep for a while.
                 Thread.sleep(50);
             }
@@ -21,6 +21,6 @@ public class ThreadDemo extends Thread {
             System.out.println("Thread " + threadName + " interrupted.");
         }
 
-        System.out.println("Thread " + threadName + " exiting.");
+        System.out.println("\nThread " + threadName + " exiting.");
     }
 }
