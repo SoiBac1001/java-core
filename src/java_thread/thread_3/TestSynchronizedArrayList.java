@@ -18,7 +18,8 @@ public class TestSynchronizedArrayList extends Thread{
     this.star = star;
   }
   
-  synchronized public void add() { // Khi chưa có synchronized, hàm add thêm lung tung do ArrayList không có cơ chế đồng bộ hóa (synchronized) ở hàm add (của ArrayList)
+  /*synchronized*/ public void add() { // đặt synchronized ở method này ko có ý nghĩa bởi vì ko có bất kỳ shared resource nào ở đây cả
+    // khi tạo mới 1 thread thì hàm add này chịu sự quản lý của thread đó mà ko liên quan tới thread khác
     System.out.println("List of elements of thread: " + currentThread().getId());
     List<Integer> arrayList = star.getArrayList();
     arrayList.add(1); // Luồng thread t1 đang thực hiện thêm thì luồng thread t2 nhảy vào hàm này
@@ -38,7 +39,7 @@ public class TestSynchronizedArrayList extends Thread{
     }
   }
 
-  /*synchronized public void add() { // Khi chưa có synchronized, hàm add thêm lung tung do ArrayList không có cơ chế đồng bộ hóa (synchronized) ở hàm add (của ArrayList)
+  /*public void add() { // Khi chưa có synchronized, hàm add thêm lung tung do ArrayList không có cơ chế đồng bộ hóa (synchronized) ở hàm add (của ArrayList)
     synchronized (star.getArrayList()) {
       List<Integer> arrayList = star.getArrayList();
       arrayList.add(1); // Luồng thread t1 đang thực hiện thêm thì luồng thread t2 nhảy vào hàm này
