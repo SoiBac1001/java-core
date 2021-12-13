@@ -31,6 +31,7 @@ class Customer{
 	public synchronized void withdraw(int amount) {
 		System.out.println("Chuan bi rut tien");
 		if(this.balance < amount) {
+			System.out.println("Current thread: " + Thread.currentThread().getName());
 			System.out.println("Ko du tien, nap them vao !");
 			try {
 				wait();
@@ -48,7 +49,7 @@ class Customer{
 		System.out.println("Chuan bi nap tien");
 		this.balance += amount;
 		System.out.println("Nap thanh cong !");
-		notify(); // KO notify thì cứ wait mãi ở trên // đánh thức object đang ở trạng thái wait()
+		notifyAll(); // KO notify thì cứ wait mãi ở trên // đánh thức object đang ở trạng thái wait()
 		// notifyAll(); // đánh thức tất cả object đang ở trạng thái wait()
 	}
 }
@@ -62,18 +63,29 @@ public class App {
 		Thread t1 = new Thread() {
 			@Override
 			public void run() {
-				c.withdraw(100);
+				c.withdraw(5000);
+				System.out.println("[withdraw] available balance " + c.balance);
+			}
+		};
+
+		Thread t3 = new Thread() {
+			@Override
+			public void run() {
+				c.withdraw(5000);
+				System.out.println("[withdraw] available balance " + c.balance);
 			}
 		};
 		
 		Thread t2 = new Thread() {
 			@Override
 			public void run() {
-				c.deposit(10000);
+				c.deposit(100000);
+				System.out.println("[deposit] available balance " + c.balance);
 			}
 		};
 		
 		t1.start();
+		t3.start();
 		t2.start();
 	}
 }
