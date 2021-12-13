@@ -44,13 +44,34 @@ class Customer{
 		this.balance -= amount;
 		System.out.println("Rut tien thanh cong !");
 	}
+
+	public synchronized void countMoney() {
+		System.out.println("Count money");
+		System.out.println("Current thread: " + Thread.currentThread().getName());
+		try {
+			wait();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		System.out.println("More money !");
+	}
 	
 	public synchronized void deposit(int amount) {
 		System.out.println("Chuan bi nap tien");
+		System.out.println("Current thread: " + Thread.currentThread().getName());
+
+//		try { // đặt thread ở đây thì tất cả các luồng mà dùng đến shared resource thì đều sleep ?, chứ ko phải luồng đang vào sleep
+//			Thread.sleep(3000);
+//		} catch (InterruptedException e) {
+//			e.printStackTrace();
+//		}
 		this.balance += amount;
 		System.out.println("Nap thanh cong !");
-		notifyAll(); // KO notify thì cứ wait mãi ở trên // đánh thức object đang ở trạng thái wait()
-		// notifyAll(); // đánh thức tất cả object đang ở trạng thái wait()
+
+//		notify(); // KO notify thì cứ wait mãi ở trên // đánh thức object đang ở trạng thái wait()
+		 notifyAll(); // đánh thức tất cả object đang ở trạng thái wait()
 	}
 }
 
@@ -63,29 +84,47 @@ public class App {
 		Thread t1 = new Thread() {
 			@Override
 			public void run() {
-				c.withdraw(5000);
-				System.out.println("[withdraw] available balance " + c.balance);
+				Thread.currentThread().setName("T1");
+				c.withdraw(3000);
+				System.out.println("[withdraw T1] available balance with  " + c.balance);
 			}
 		};
 
 		Thread t3 = new Thread() {
 			@Override
 			public void run() {
+				Thread.currentThread().setName("T3");
 				c.withdraw(5000);
-				System.out.println("[withdraw] available balance " + c.balance);
+				System.out.println("[withdraw T3] available balance " + c.balance);
+			}
+		};
+
+		Thread t4 = new Thread() {
+			@Override
+			public void run() {
+				Thread.currentThread().setName("T4");
+				c.countMoney();
+				System.out.println("[Counting T4] available balance ");
 			}
 		};
 		
 		Thread t2 = new Thread() {
 			@Override
 			public void run() {
+				Thread.currentThread().setName("T2");
+				try {
+					Thread.sleep(3000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 				c.deposit(100000);
-				System.out.println("[deposit] available balance " + c.balance);
+				System.out.println("[Deposit T2] available balance " + c.balance);
 			}
 		};
 		
 		t1.start();
 		t3.start();
+		t4.start();
 		t2.start();
 	}
 }
