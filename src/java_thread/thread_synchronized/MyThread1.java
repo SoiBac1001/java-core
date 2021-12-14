@@ -14,10 +14,15 @@ public class MyThread1 extends Thread {
 		super();
 		this.t = t;
 	}
+
+	public MyThread1(Table t, String threadName) {
+		super(threadName);
+		this.t = t;
+	}
 	
 	@Override
 	public void run() {
-		System.out.println(this.getName()); // MyThread1 kế thừa Thread thì mới có cái này
+//		System.out.println(this.getName()); // MyThread1 kế thừa Thread thì mới có cái này
 		t.printTable(5);
 	}
 }

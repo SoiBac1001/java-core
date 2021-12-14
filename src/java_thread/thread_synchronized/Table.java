@@ -13,6 +13,7 @@ package java_thread.thread_synchronized;
 
 public class Table {
 	/*void printTable(int n) { // method ko synchronized
+		System.out.println();
 		for(int i=1; i<=5; i++) {
 			System.out.println(n*i);
 			try {
@@ -23,8 +24,25 @@ public class Table {
 			}
 		}
 	}*/
+
+	public static synchronized void printTable(int n) { // synchronized static method
+		synchronized (Table.class) { // synchronized block in a static method
+			System.out.println(Thread.currentThread().getName());
+			for(int i=1; i<=5; i++) {
+				System.out.println(n*i);
+				try {
+					Thread.sleep(400);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+			System.out.println();
+		}
+	}
 	
 	/*synchronized void printTable(int n) { // synchronized method
+		System.out.println(Thread.currentThread().getName());
 		for(int i=1; i<=5; i++) {
 			System.out.println(n*i);
 			try {
@@ -34,9 +52,10 @@ public class Table {
 				e.printStackTrace();
 			}
 		}
+		System.out.println();
 	}*/
 	
-	void printTable(int n) {
+	/*void printTable(int n) {
 		synchronized (this) { // khối đồng bộ: (synchronized block)
 			for(int i=1; i<=5; i++) {
 				System.out.println(n*i);
@@ -48,5 +67,5 @@ public class Table {
 				}
 			}
 		}
-	}
+	}*/
 }

@@ -55,12 +55,12 @@ class Customer{
 	public synchronized void countMoney() {
 		System.out.println("Count money");
 		System.out.println("\t+ Current thread: " + Thread.currentThread().getName());
-		try {
+		/*try {
 			wait();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
 
 		System.out.println("More money !");
 	}

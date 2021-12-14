@@ -13,8 +13,13 @@ package java_thread.thread_synchronized;
 public class TestSynchronization1 {
 	public static void main(String[] args) {
 		Table table = new Table();
-		MyThread1 t1 = new MyThread1(table);
-		MyThread2 t2 = new MyThread2(table);
+		Table table1 = new Table();
+		Table table2 = new Table();
+		MyThread1 t1 = new MyThread1(table1, "Thread T1");
+
+		MyThread2 t2 = new MyThread2(table2);
+		t2.setName("Thread T2");
+
 		t1.start();
 		t2.start();
 	}
