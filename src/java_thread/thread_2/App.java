@@ -30,9 +30,10 @@ class Customer{
 	int balance = 1000;
 	public synchronized void withdraw(int amount) {
 		System.out.println("Chuan bi rut tien");
+		String threadName = Thread.currentThread().getName();
 		if(this.balance < amount) {
-			System.out.println("Current thread: " + Thread.currentThread().getName());
-			System.out.println("Ko du tien, nap them vao !");
+			System.out.println("\t+ Current thread: " + threadName);
+			System.out.println("\t+ Ko du tien, nap them vao !");
 			try {
 				wait();
 			} catch (InterruptedException e) {
@@ -41,19 +42,19 @@ class Customer{
 			}
 		}
 		this.balance *= 2;
-		System.out.println("Available balance with  " + balance);
+		System.out.printf("\t+ Available balance %s with amount %s%n", threadName, balance);
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 		this.balance -= amount;
-		System.out.println("Rut tien thanh cong !");
+		System.out.printf("\t+ Rut tien thanh cong for %s with amount %s%n", threadName, balance);
 	}
 
 	public synchronized void countMoney() {
 		System.out.println("Count money");
-		System.out.println("Current thread: " + Thread.currentThread().getName());
+		System.out.println("\t+ Current thread: " + Thread.currentThread().getName());
 		try {
 			wait();
 		} catch (InterruptedException e) {
@@ -66,15 +67,15 @@ class Customer{
 	
 	public synchronized void deposit(int amount) {
 		System.out.println("Chuan bi nap tien");
-		System.out.println("Current thread: " + Thread.currentThread().getName());
+		System.out.println("\t+ Current thread: " + Thread.currentThread().getName());
 
-//		try { // đặt thread ở đây thì tất cả các luồng mà dùng đến shared resource thì đều sleep ?, chứ ko phải luồng đang vào sleep
-//			Thread.sleep(3000);
-//		} catch (InterruptedException e) {
-//			e.printStackTrace();
-//		}
+		try { // đặt thread ở đây thì tất cả các luồng mà dùng đến shared resource thì đều sleep ?, chứ ko phải luồng đang vào sleep
+			Thread.sleep(3000); // ko đúng - chỉ có current thread dùng tới hàm này sleep thôi
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		this.balance += amount;
-		System.out.println("Nap thanh cong !");
+		System.out.println("\t+ Nap thanh cong !");
 
 //		notify(); // KO notify thì cứ wait mãi ở trên // đánh thức object đang ở trạng thái wait() // đánh thức 1 thread bất kỳ
 		 notifyAll(); // đánh thức tất cả object đang ở trạng thái wait() // đánh thức tất cả các thread => khi đó các thread vẫn thực hiện synchronized trở lại
@@ -111,7 +112,7 @@ public class App {
 			public void run() {
 				Thread.currentThread().setName("T4");
 				c.countMoney();
-				System.out.println("[Counting T4] available balance ");
+				System.out.println("[Counting T4]");
 			}
 		};
 		
@@ -119,18 +120,18 @@ public class App {
 			@Override
 			public void run() {
 				Thread.currentThread().setName("T2");
-				try {
+				/*try {
 					Thread.sleep(3000);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
-				}
+				}*/
 				c.deposit(100000);
 				System.out.println("[Deposit T2] available balance " + c.balance);
 			}
 		};
 		
-		t1.start();
 		t3.start();
+		t1.start();
 		t4.start();
 		t2.start();
 	}
