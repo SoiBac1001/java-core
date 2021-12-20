@@ -41,7 +41,7 @@ class Customer{
 				e.printStackTrace();
 			}
 		}
-		this.balance *= 2;
+//		this.balance *= 2;
 		System.out.printf("\t+ Available balance %s with amount %s%n", threadName, balance);
 		try {
 			Thread.sleep(3000);
@@ -77,14 +77,14 @@ class Customer{
 		this.balance += amount;
 		System.out.println("\t+ Nap thanh cong !");
 
-//		notify(); // KO notify thì cứ wait mãi ở trên // đánh thức object đang ở trạng thái wait() // đánh thức 1 thread bất kỳ
-		 notifyAll(); // đánh thức tất cả object đang ở trạng thái wait() // đánh thức tất cả các thread => khi đó các thread vẫn thực hiện synchronized trở lại
+		notify(); // KO notify thì cứ wait mãi ở trên // đánh thức object đang ở trạng thái wait() // đánh thức 1 thread bất kỳ
+//		 notifyAll(); // đánh thức tất cả object đang ở trạng thái wait() // đánh thức tất cả các thread => khi đó các thread vẫn thực hiện synchronized trở lại
 		// đang có thread thao tác với shared resource thì những thread khác sẽ ko được thao tác với shared resource đó nữa
 	}
 }
 
-public class App {
-	public static void main(String[] args) {
+public class AppManagement {
+	public static void main(String[] args) throws InterruptedException {
 		/*Runner runner = new Runner();
 		runner.start();*/
 		
@@ -102,7 +102,7 @@ public class App {
 			@Override
 			public void run() {
 				Thread.currentThread().setName("T3");
-				c.withdraw(5000);
+				c.withdraw(3000);
 				System.out.println("[withdraw T3] available balance " + c.balance);
 			}
 		};
@@ -131,7 +131,11 @@ public class App {
 		};
 		
 		t3.start();
+		t3.join(1000);
+
 		t1.start();
+		t1.join(1000);
+
 		t4.start();
 		t2.start();
 	}

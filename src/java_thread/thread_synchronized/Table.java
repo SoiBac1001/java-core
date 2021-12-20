@@ -13,7 +13,7 @@ package java_thread.thread_synchronized;
 
 public class Table {
 	/*void printTable(int n) { // method ko synchronized
-		System.out.println();
+		System.out.println(Thread.currentThread().getName());
 		for(int i=1; i<=5; i++) {
 			System.out.println(n*i);
 			try {
@@ -23,6 +23,7 @@ public class Table {
 				e.printStackTrace();
 			}
 		}
+		System.out.println();
 	}*/
 
 	public static synchronized void printTable(int n) { // synchronized static method

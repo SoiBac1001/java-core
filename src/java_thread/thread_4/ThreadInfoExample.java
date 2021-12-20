@@ -14,13 +14,13 @@ public class ThreadInfoExample {
         t2.setPriority(5);
         t3.setPriority(10);
 
-        t3.start();
         t3.setUncaughtExceptionHandler((t, e) -> {
             System.out.println("#Thread: " + t);
             System.out.println("#Thread exception message: " + e.getMessage());
         });
+        t3.start();
 
-//        t2.start();
-//        t1.start();
+        t2.start();
+        t1.start();
     }
 }

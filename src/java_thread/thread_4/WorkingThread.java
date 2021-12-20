@@ -11,6 +11,6 @@ public class WorkingThread extends Thread {
             System.out.printf("Luồng: %s có độ ưu tiên là %d \n", getName(), getPriority());
         }
 
-        throw new RuntimeException("Simulate an exception");
+//        throw new RuntimeException("Simulate an exception");
     }
 }

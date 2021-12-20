@@ -15,9 +15,10 @@ public class TestSynchronization1 {
 		Table table = new Table();
 		Table table1 = new Table();
 		Table table2 = new Table();
-		MyThread1 t1 = new MyThread1(table1, "Thread T1");
+		MyThread1 t1 = new MyThread1(table, "Thread T1");
+//		MyThread1 t1 = new MyThread1(table);
 
-		MyThread2 t2 = new MyThread2(table2);
+		MyThread1 t2 = new MyThread1(table);
 		t2.setName("Thread T2");
 
 		t1.start();
