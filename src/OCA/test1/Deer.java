@@ -1,7 +1,5 @@
 package OCA.test1;
 
-import static javafx.scene.input.KeyCode.F;
-
 public class Deer {
     private static int loop = 10;
     private static int loop2;

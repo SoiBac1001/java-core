@@ -12,6 +12,7 @@ package java_thread.thread_synchronized;
  */
 
 public class Table {
+	private static Integer number = 1;
 	/*void printTable(int n) { // method ko synchronized
 		System.out.println(Thread.currentThread().getName());
 		for(int i=1; i<=5; i++) {
@@ -30,7 +31,9 @@ public class Table {
 		synchronized (Table.class) { // synchronized block in a static method
 			System.out.println(Thread.currentThread().getName());
 			for(int i=1; i<=5; i++) {
-				System.out.println(n*i);
+//				System.out.println(n*i);
+				number *= i;
+				System.out.println(number*i);
 				try {
 					Thread.sleep(400);
 				} catch (InterruptedException e) {

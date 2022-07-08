@@ -6,6 +6,7 @@
  */
 package java_core.collection;
 
+import java.awt.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
@@ -14,7 +15,11 @@ import java.util.*;
  * @author SoiBac1001
  */
 public class VD_Collections {
+    enum Color { GREEN, BLUE, RED, WHITE }
+
     public static void main(String[] args) {
+        testTreeMap();
+        testEnumMap();
         String source = "soibac1001";
         String encodeBase64 = encodeBase64(source.getBytes());
         System.out.println(encodeBase64);
@@ -43,6 +48,62 @@ public class VD_Collections {
         
         for(Object k : list){
             System.out.println(k + ", ");
+        }
+    }
+
+    private static void testTreeMap() {
+        // Creating an empty TreeMap
+        TreeMap<Integer, String> tree_map
+                = new TreeMap<Integer, String>();
+
+        // Mapping string values to int keys
+        // using put() method
+        tree_map.put(40, "Geeks");
+        tree_map.put(15, "4");
+        tree_map.put(20, "Geeks");
+        tree_map.put(50, "Welcomes");
+        tree_map.put(30, "You");
+
+        // Printing the elements of TreeMap
+        System.out.println("TreeMap: " + tree_map);
+    }
+
+    private static void testEnumMap() {
+        {
+
+            // Creating an EnumMap of the Color enum
+            /*EnumMap<Color, Integer> colors1
+                    = new EnumMap<>(Color.class);*/
+
+            /*Map<Color, Integer> colors1
+                    = new TreeMap<>();*/
+
+            Map<Color, Integer> colors1
+                    = new HashMap<>();
+
+            // Insert elements in Map
+            // using put() method
+            colors1.put(Color.RED, 1);
+            colors1.put(Color.GREEN, 2);
+            colors1.put(Color.WHITE, 3);
+
+            for(Color c : Color.values()) {
+                System.out.println(c.name() + " - " + c.ordinal());
+            }
+
+            // Printing mappings to the console
+            System.out.println("EnumMap colors1: " + colors1);
+
+            // Creating an EnumMap of the Color Enum
+            EnumMap<Color, Integer> colors2
+                    = new EnumMap<>(Color.class);
+
+            // Adding elements using the putAll() method
+            colors2.putAll(colors1);
+            colors2.put(Color.BLUE, 3);
+
+            // Printing mappings to the console
+            System.out.println("EnumMap colors2: " + colors2);
         }
     }
 
