@@ -1,6 +1,6 @@
 package java_thread.volatile_thread;
 
-public class VolatileTest5 {
+public class VolatileTest6 {
     // volatile
     private volatile boolean active;
 
@@ -34,7 +34,7 @@ public class VolatileTest5 {
         Thread thread1 = new Thread(() -> {
 //            sleep(4); // with sleep thread, i don't need volatile for active variable
             // Because after sleep, this thread will flush all cache memory
-            while (!sharedRequest.isActive()) {
+            while (sharedRequest.getNumber() == 0) {
                 // trong hàm này có use keyword synchronized => khi run qua synchronized nó sẽ flush lại cache memory của thread đó
                 // => get được isActive = true
 //                System.out.print("");
@@ -59,18 +59,18 @@ public class VolatileTest5 {
 
     public void process() {
         String threadName = Thread.currentThread().getName();
-        if (!sharedRequest.isActive()) { // sử dụng cái này để ko block thread
+        if (sharedRequest.getNumber() == 0) { // sử dụng cái này để ko block thread
             System.out.printf("\nThread name is waiting: %s", threadName);
 
 //            synchronized (this) {
             System.out.printf("\nthread name: %s, active: %s", threadName, sharedRequest.isActive());
-            if (!sharedRequest.isActive()) {
+            if (sharedRequest.getNumber() == 0) {
                 sleep(3);
                 System.out.println("\n\n===================================");
                 System.out.printf("Thread name is working: %s", threadName);
                 System.out.println("\n===================================");
 //                active = true;
-                sharedRequest.setActive(true);
+                sharedRequest.getAndIncrement();
             }
 //            }
         }
@@ -87,7 +87,7 @@ public class VolatileTest5 {
     }
 
     public static void main(String[] args) throws Exception {
-        VolatileTest5 example = new VolatileTest5();
+        VolatileTest6 example = new VolatileTest6();
         /*example.prepare();
         example.start();
         sleep(10);*/

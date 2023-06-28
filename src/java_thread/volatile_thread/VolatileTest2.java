@@ -1,12 +1,15 @@
 package java_thread.volatile_thread;
 
 public class VolatileTest2 {
-    private volatile boolean active;
+//    private volatile boolean active;
 
     // without volatile
-//    private boolean active;
+    private boolean active;
 
-    // static variable
+    // static
+//    private static volatile boolean active;
+
+    // static without volatile
 //    private static boolean active;
 
     public void prepare() throws InterruptedException {
@@ -28,6 +31,10 @@ public class VolatileTest2 {
 
     public void processThread1() throws InterruptedException {
         Thread thread1 = new Thread(() -> {
+            /*if(active) {
+
+            }*/
+
 //            sleep(4); // with sleep thread, i don't need volatile for active variable
                               // Because after sleep, this thread will flush all cache memory
             while (!active) {
@@ -43,6 +50,7 @@ public class VolatileTest2 {
     public void processThread2() throws InterruptedException {
         Thread thread2 = new Thread(() -> {
             System.out.println("\nProcess thread 2 ...");
+//            active = true;
             process();
         });
         thread2.setName("thread 2");
@@ -57,7 +65,7 @@ public class VolatileTest2 {
 //            synchronized (this) {
                 System.out.printf("\nthread name: %s, active: %s", threadName, active);
                 if (!active) {
-                    sleep(3);
+//                    sleep(3);
                     System.out.println("\n\n===================================");
                     System.out.printf("Thread name is working: %s", threadName);
                     System.out.println("\n===================================");

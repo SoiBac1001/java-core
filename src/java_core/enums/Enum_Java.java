@@ -3,7 +3,7 @@
  * enum tương tự như lớp
  * lai giữa mảng và đối tượng
  */
-package java_core;
+package java_core.enums;
 
 /*
  * Nguồn: http://viettuts.vn/java-new-features/enum-trong-java
