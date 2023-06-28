@@ -1,6 +1,7 @@
 package java_core.collection;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class TestMap {
     public static void main(String[] args) {
@@ -35,6 +36,101 @@ public class TestMap {
             //Success !! We are still able to get back the value for account number 1
             System.out.println(map.get(a3)); //Prints A_ONE
         }
+
+        testMap();
+//        testCompute();
+        testComputeIfAbsent();
+//        testComputeIfPresent();
+    }
+
+    private static void testMap() {
+        // Initializing a Map of type HashMap
+        Map<Integer, String> map = new HashMap<>();
+        map.put(1, "One");
+        map.put(3, "Three");
+        map.put(5, "Five");
+        map.put(7, "Seven");
+        map.put(9, "Nine");
+        System.out.println(map);
+
+        Map<Integer, String> mp = new HashMap<>();
+        mp.put(1, "Ten");
+        mp.put(30, "Thirty");
+        mp.put(50, "Fifty");
+
+        map.putAll(mp);
+
+        System.out.println(map);
+    }
+
+    private static void testCompute() {
+        // create an HashMap
+        HashMap<String, Integer> prices = new HashMap<>();
+
+        // insert entries to the HashMap
+        prices.put("Shoes", 200);
+        prices.put("Bag", 300);
+        prices.put("Pant", 150);
+        System.out.println("HashMap: " + prices);
+
+        // recompute the value of Shoes with 10% discount
+        int newPrice = prices.compute("Shoes", (key, value) -> value - value * 10/100);
+        System.out.println("Discounted Price of Shoes: " + newPrice);
+
+        // if key is not existed, the programing will throw NullPointerException exception
+        int newPrice2 = prices.compute("abcd", (key, value) -> value - value * 10/100);
+        System.out.println("Discounted Price of Shoes: " + newPrice2);
+
+        // print updated HashMap
+        System.out.println("Updated HashMap: " + prices);
+    }
+
+    private static void testComputeIfAbsent() {
+        System.out.println("==================================");
+        // create an HashMap
+        HashMap<String, Integer> prices = new HashMap<>();
+
+        // insert entries to the HashMap
+        prices.put("Shoes", 200);
+        prices.put("Bag", 300);
+        prices.put("Pant", 150);
+        System.out.println("HashMap: " + prices);
+
+        // compute the value of Shirt
+        int shirtPrice = prices.computeIfAbsent("Shirt", key -> 280);
+        System.out.println("Price of Shirt: " + shirtPrice);
+
+        // if key is existed, the programing will not compute the new value for existed key
+        int shirtPrice2 = prices.computeIfAbsent("Shoes", key -> 280);
+        System.out.println("Price of Shirt: " + shirtPrice2);
+
+        // print updated HashMap
+        System.out.println("Updated HashMap: " + prices);
+        System.out.println("==================================");
+    }
+
+    private static void testComputeIfPresent() {
+        System.out.println("==================================");
+        // create an HashMap
+        HashMap<String, Integer> prices = new HashMap<>();
+
+        // insert entries to the HashMap
+        prices.put("Shoes", 200);
+        prices.put("Bag", 300);
+        prices.put("Pant", 150);
+        System.out.println("HashMap: " + prices);
+
+        // recompute the value of Shoes with 10% VAT
+        int shoesPrice = prices.computeIfPresent("Shoes", (key, value) -> value + value * 10/100);
+        System.out.println("Price of Shoes after VAT: " + shoesPrice);
+
+        // if key is not existed, the programing will throw NullPointerException exception
+        int shoesPrice2 = prices.computeIfPresent("abcd", (key, value) -> value + value * 10/100);
+        System.out.println("Price of Shoes after VAT: " + shoesPrice2);
+
+        // print updated HashMap
+        System.out.println("Updated HashMap: " + prices);
+        System.out.println("==================================");
     }
 }
 

@@ -2,7 +2,14 @@
 package java_core.string;
 
 public class StringBuilderClass {
+    private static String text;
     public static void main(String[] args) {
+        String input = "a";
+        setString(input);
+        input = "b";
+
+        System.out.println(text);
+        System.out.println(input);
         StringBuilder sb = new StringBuilder("Hello world !"); // Tạo một Builder với chuỗi đã xác định
         
 //        System.out.println("Thong tin trong sb la: " + sb.toString()); // Hello world !
@@ -20,5 +27,9 @@ public class StringBuilderClass {
         System.out.println("Chuoi sb: " + sb); // ! sknahT ! dlrow oaB iH
         
         System.out.println("Sau khi xoa 1 doan chuoi: " + sb.delete(0, 7)); // xóa đoạn chuỗi từ ký tự 0 ký tự đến(7-1) = 6 // T ! dlrow oaB iH
+    }
+
+    private static void setString(String input) {
+        text = input;
     }
 }
