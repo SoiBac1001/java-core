@@ -1,4 +1,4 @@
-package algorithms.java;
+package algorithms;
 /*
  * Thuật toán tìm kiếm nhị phân là phương pháp định vị phần tử x trong một danh sách arr[] gồm n phần tử đã được sắp xếp
  * TH mảng ngẫu nhiên thì sẽ ko biết được phần tử cần tìm sẽ nằm ở cận dưới hay cận trên

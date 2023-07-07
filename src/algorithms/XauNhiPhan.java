@@ -1,4 +1,4 @@
-package algorithms.java;
+package algorithms;
 
 import java.util.Scanner;
 
@@ -17,8 +17,8 @@ public class XauNhiPhan {
     }
 
     private static void display(int[] array){
-        for(int j = 0; j < array.length; j++) {
-            System.out.print(array[j]);
+        for (int i : array) {
+            System.out.print(i);
         }
         System.out.println();
     }

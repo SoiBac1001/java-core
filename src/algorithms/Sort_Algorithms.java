@@ -1,4 +1,4 @@
-package algorithms.java;
+package algorithms;
 
 public class Sort_Algorithms {
 	public static final int[] NUMBERS = {5,1,12,-5,2,16};

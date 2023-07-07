@@ -1,4 +1,4 @@
-package algorithms.java;
+package algorithms;
 
 public class CheckSum {
     private static int count;

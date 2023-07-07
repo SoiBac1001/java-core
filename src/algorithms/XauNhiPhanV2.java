@@ -1,4 +1,4 @@
-package algorithms.java;
+package algorithms;
 
 import java.io.IOException;
 import java.util.Scanner;
