@@ -1,8 +1,8 @@
 package algorithms.stack_queue;
 
 public class MyArrayStack implements StackQueue {
-    private int array[];
-    private int size;
+    private final int[] array;
+    private final int size;
     private int topIndex;
 
     public MyArrayStack(int size) {

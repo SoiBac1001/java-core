@@ -77,6 +77,33 @@ public class MyLinkedList {
 
         return newNode;
     }
+    private static Node removeHeadNode(Node currentHead) {
+        if(currentHead != null) {
+            return currentHead.next;
+        }
+
+        return null;
+    }
+
+    private static Node removeTailNode(Node currentHead) {
+        if(currentHead != null) {
+            Node currentNode = currentHead;
+            while(true) {
+                if(currentNode.next != null) {
+                    if(currentNode.next.next == null) {
+                        currentNode.next = null;
+                        return currentHead;
+                    }
+                } else {
+                    return currentHead;
+                }
+
+                currentNode = currentNode.next;
+            }
+        }
+
+        return currentHead;
+    }
 
     private static Node removeNode(Node currentHead, int removedValue) {
         if(currentHead != null) {
@@ -97,6 +124,7 @@ public class MyLinkedList {
                     currentNode = currentNode.next;
                 } else {
                     System.out.println("Not found removed value: " + removedValue);
+                    break;
                 }
             }
         }
@@ -107,7 +135,7 @@ public class MyLinkedList {
     private static void displayLinkedList(Node head) {
         System.out.print("=========");
         if(head == null) {
-            System.out.println("Linked list is empty !");
+            System.out.println("\nLinked list is empty !");
         } else {
             System.out.print("\nLinked list: " + head.value);
 
@@ -131,20 +159,35 @@ public class MyLinkedList {
         System.out.println("Init linked list");
         displayLinkedList(node1);
 
+//        testAddLinkedList(node1);
+        testRemoveLinkedList(node1);
+    }
+
+    private static void testAddLinkedList(Node headNode) {
         System.out.println("Add 0 to head");
-        node1 = addToHead(node1, 0);
-        displayLinkedList(node1);
+        headNode = addToHead(headNode, 0);
+        displayLinkedList(headNode);
 
         System.out.println("Add 5 to tail");
-        addToTail(node1, 5);
-        displayLinkedList(node1);
+        addToTail(headNode, 5);
+        displayLinkedList(headNode);
 
         System.out.println("Add 4 to index: " + 4);
-        addToIndex(node1, 4, 4);
-        displayLinkedList(node1);
+        addToIndex(headNode, 4, 4);
+        displayLinkedList(headNode);
+    }
+
+    private static void testRemoveLinkedList(Node headNode) {
+        System.out.println("Remove head");
+        headNode = removeHeadNode(headNode);
+        displayLinkedList(headNode);
+
+        System.out.println("Remove tail");
+        removeTailNode(headNode);
+        displayLinkedList(headNode);
 
         System.out.println("Remove 3 from linked list");
-        Node headNode = removeNode(node1, 3);
-        displayLinkedList(headNode);
+        Node newHeadNode = removeNode(headNode, 3);
+        displayLinkedList(newHeadNode);
     }
 }
