@@ -13,6 +13,8 @@ public class Test {
         int[] inputArray7 = new int[]{10, 14, 12, 999, 1000, 11, 15, 13};
         int[] inputArray8 = new int[]{10, 14, 12, 16, 11, 15, 13};
         int[] inputArray9 = new int[]{14, 12, 16, 11, 15, 13};
+        int[] inputArray10 = new int[]{6, 7, 8, 11, 15};
+        
         System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray1));
         System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray2));
         System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray3));
@@ -22,6 +24,7 @@ public class Test {
         System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray7));
         System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray8));
         System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray9));
+        System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray10));
 
         /*// Given array arr[]
         int arr[] = {11,5,3,12,6,8,1,7,4};
@@ -161,8 +164,31 @@ public class Test {
             maxDiff1 = diffMinMax(expectedG1);
             maxDiff2 = maxNumberOfG2 - forwardElement;
             newSmallMaxDiff = findMax(maxDiff1, maxDiff2, maxDiff3);
+            if(newSmallMaxDiff < smallestMaxDiff) {
+                smallestMaxDiff = newSmallMaxDiff;
+                List<Integer> cloneG2 = new ArrayList<>(expectedG2);
+                Collections.sort(cloneG2);
+                List<Integer> cloneG3 = new ArrayList<>(expectedG3);
+                int newSmallMaxDiffL2;
+                int max1 = diffMinMax(expectedG1);
+
+                // array giữa (G2): san phải
+                do {
+                    forwardElement = cloneG2.get(cloneG2.size() - 1);
+                    cloneG3.add(forwardElement);
+                    cloneG2.remove(forwardElement);
+                    maxDiff2 = diffMinMax(cloneG2);
+                    maxDiff3 = diffMaxMin(cloneG3);
+                    newSmallMaxDiffL2 = findMax(max1, maxDiff2, maxDiff3);
+                    if(newSmallMaxDiffL2 < smallestMaxDiff) {
+                        smallestMaxDiff = newSmallMaxDiffL2;
+                    } else {
+                        break;
+                    }
+                } while (true);
+            }
         } else if (smallestMaxDiff == maxDiff2) {
-            if(expectedG2.size() <= 2) {
+            if(expectedG2.size() <= 1) {
                 return smallestMaxDiff;
             }
             List<Integer> cloneG1 = new ArrayList<>(expectedG1);
@@ -181,6 +207,10 @@ public class Test {
                 if(newSmallMaxDiffL1 < smallestMaxDiff) {
                     smallestMaxDiff = newSmallMaxDiffL1;
                 } else {
+                    break;
+                }
+
+                if(cloneG2.size() <= 1) {
                     break;
                 }
             } while (true);
@@ -203,6 +233,10 @@ public class Test {
                 } else {
                     break;
                 }
+
+                if(cloneG2.size() <= 1) {
+                    break;
+                }
             } while (true);
 
             return smallestMaxDiff;
@@ -218,9 +252,36 @@ public class Test {
             maxDiff2 = diffMinMax(expectedG2);
             maxDiff3 = diffMaxMin(expectedG3);
             newSmallMaxDiff = findMax(maxDiff1, maxDiff2, maxDiff3);
+            if(newSmallMaxDiff < smallestMaxDiff) {
+                smallestMaxDiff = newSmallMaxDiff;
+
+                List<Integer> cloneG1 = new ArrayList<>(expectedG1);
+                List<Integer> cloneG2 = new ArrayList<>(expectedG2);
+                int newSmallMaxDiffL1;
+                int max3 = diffMaxMin(expectedG3);
+
+                // array giữa (G2): san trái
+                do {
+                    forwardElement = cloneG2.get(0);
+                    cloneG1.add(forwardElement);
+                    cloneG2.remove(forwardElement);
+
+                    maxDiff1 = diffMinMax(cloneG1);
+                    maxDiff2 = diffMinMax(cloneG2);
+                    newSmallMaxDiffL1 = findMax(maxDiff1, maxDiff2, max3);
+                    if(newSmallMaxDiffL1 < smallestMaxDiff) {
+                        smallestMaxDiff = newSmallMaxDiffL1;
+                    } else {
+                        break;
+                    }
+                    if(cloneG2.size() <= 1) {
+                        break;
+                    }
+                } while (true);
+            }
         }
 
-        return Math.min(newSmallMaxDiff, smallestMaxDiff);
+        return smallestMaxDiff;
     }
 
     private static List<Integer> initG2(int[] inputArray) {
