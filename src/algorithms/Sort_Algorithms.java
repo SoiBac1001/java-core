@@ -72,8 +72,8 @@ public class Sort_Algorithms {
 	  displayArr();
 	  System.out.println("\n=======================");
 	  
-//		bubble_Sort(NUMBERS);
-		selection_Sort(NUMBERS);
+		bubble_Sort(NUMBERS);
+//		selection_Sort(NUMBERS);
 	}
 
 }

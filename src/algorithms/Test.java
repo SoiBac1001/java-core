@@ -10,12 +10,18 @@ public class Test {
         int[] inputArray4 = new int[]{5, 10, 10, 5, 5};
         int[] inputArray5 = new int[]{6, 7, 8, 9, 12, 12, 12};
         int[] inputArray6 = new int[]{10, 14, 12, 999, 1000, 11, 15, 13, 1};
+        int[] inputArray7 = new int[]{10, 14, 12, 999, 1000, 11, 15, 13};
+        int[] inputArray8 = new int[]{10, 14, 12, 16, 11, 15, 13};
+        int[] inputArray9 = new int[]{14, 12, 16, 11, 15, 13};
         System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray1));
         System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray2));
         System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray3));
         System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray4));
         System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray5));
         System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray6));
+        System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray7));
+        System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray8));
+        System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray9));
 
         /*// Given array arr[]
         int arr[] = {11,5,3,12,6,8,1,7,4};
@@ -109,19 +115,23 @@ public class Test {
         int smallestMaxDiff = findMax(maxDiff1 , maxDiff2, maxDiff3);
         int newSmallMaxDiff;
 
+        // array giữa (G2): san đều 2 bên
         int halfSize = lengthOfInputArray % 2 == 0 ? lengthOfInputArray / 2 : (lengthOfInputArray / 2) + 1;
         for(int i = 1; i < halfSize; i++) {
             int elementForG2 = newInputArray[i];
             g1.add(elementForG2);
-            maxDiff1 = diffMinMax(g1);
             g2.remove(Integer.valueOf(elementForG2));
 
             int elementForG3 = newInputArray[maxIndexOfInput - i];
             g3.add(elementForG3);
-            maxDiff3 = diffMaxMin(g3);
             g2.remove(Integer.valueOf(elementForG3));
 
+            if(g2.size() <= 0) {
+                break;
+            }
+            maxDiff1 = diffMinMax(g1);
             maxDiff2 = diffMinMax(g2);
+            maxDiff3 = diffMaxMin(g3);
             newSmallMaxDiff = findMax(maxDiff1, maxDiff2, maxDiff3);
             if(newSmallMaxDiff <= smallestMaxDiff) {
                 smallestMaxDiff = newSmallMaxDiff;
@@ -138,6 +148,8 @@ public class Test {
                 break;
             }
         }
+
+        // array đầu (G1): san phải
         if(smallestMaxDiff == maxDiff1) {
             if(expectedG1.size() == 1) {
                 return smallestMaxDiff;
@@ -158,6 +170,7 @@ public class Test {
             int newSmallMaxDiffL1;
             int max3 = diffMaxMin(expectedG3);
 
+            // array giữa (G2): san trái
             do {
                 Integer forwardElement = cloneG2.get(0);
                 cloneG1.add(forwardElement);
@@ -177,6 +190,7 @@ public class Test {
             int newSmallMaxDiffL2;
             int max1 = diffMinMax(expectedG1);
 
+            // array giữa (G2): san phải
             do {
                 Integer forwardElement = cloneG2.get(cloneG2.size() - 1);
                 cloneG3.add(forwardElement);
@@ -194,6 +208,7 @@ public class Test {
             return smallestMaxDiff;
 
         } else {
+            // array cuối (G3): san trái
             if(expectedG3.size() == 1) {
                 return smallestMaxDiff;
             }

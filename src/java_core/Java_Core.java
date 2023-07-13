@@ -19,6 +19,7 @@ public class Java_Core {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
+        testDouble();
     	double d = 20000000000d;
 //    	DecimalFormat decimalFormat = new DecimalFormat("#,##0.0");
     	DecimalFormat decimalFormat = new DecimalFormat("###,###,##0.00");
@@ -41,6 +42,14 @@ public class Java_Core {
             input = getUserInput();
             System.out.println("user value: " + input);
         }*/
+    }
+
+    private static void testDouble() {
+        double total = 0.2;
+        for (int i = 0; i < 100; i++) {
+            total += 0.2;
+        }
+        System.out.println("total = " + total);
     }
     
     public static int getUserInput(){
