@@ -14,7 +14,7 @@ public class Test {
         int[] inputArray8 = new int[]{10, 14, 12, 16, 11, 15, 13};
         int[] inputArray9 = new int[]{14, 12, 16, 11, 15, 13};
         int[] inputArray10 = new int[]{6, 7, 8, 11, 15};
-        
+
         System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray1));
         System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray2));
         System.out.println("The maximum of these differences as small as possible: " + splitArray(inputArray3));
@@ -132,6 +132,7 @@ public class Test {
             if(g2.size() <= 0) {
                 break;
             }
+
             maxDiff1 = diffMinMax(g1);
             maxDiff2 = diffMinMax(g2);
             maxDiff3 = diffMaxMin(g3);
@@ -147,6 +148,7 @@ public class Test {
                 maxDiff3 = diffMaxMin(expectedG3);
                 break;
             }
+
             if(g2.size() <= 1) {
                 break;
             }

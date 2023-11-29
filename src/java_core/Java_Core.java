@@ -19,6 +19,7 @@ public class Java_Core {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
+        System.out.println("LamQT-GE-ONB-INS-INVITE-TEST-PRW-C10".contains("PRW"));
         testDouble();
     	double d = 20000000000d;
 //    	DecimalFormat decimalFormat = new DecimalFormat("#,##0.0");
