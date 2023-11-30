@@ -122,11 +122,41 @@ public class MyLinkedList {
                         currentNode.next = nextNode.next;
                         break;
                     }
-                    currentNode = currentNode.next;
+                    currentNode = nextNode;
                 } else {
                     System.out.println("Not found removed value: " + removedValue);
                     break;
                 }
+            }
+        }
+
+        return currentHead;
+    }
+
+    private static Node removeNodeV2(Node currentHead, int removedValue) {
+        if(currentHead != null) {
+            if(currentHead.value == removedValue) {
+                Node nextNode = currentHead.next;
+                currentHead.next = null;
+
+                return nextNode;
+            }
+
+            Node currentNode = currentHead;
+            boolean foundValue = false;
+            while(currentNode.next != null) {
+                Node nextNode = currentNode.next;
+                if(nextNode.value == removedValue) {
+                    currentNode.next = nextNode.next;
+                    foundValue = true;
+                    break;
+                }
+
+                currentNode = nextNode;
+            }
+
+            if(!foundValue) {
+                System.out.println("Not found removed value: " + removedValue);
             }
         }
 
