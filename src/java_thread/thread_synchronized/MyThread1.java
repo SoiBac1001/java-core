@@ -23,6 +23,6 @@ public class MyThread1 extends Thread {
 	@Override
 	public void run() {
 //		System.out.println(this.getName()); // MyThread1 kế thừa Thread thì mới có cái này
-		t.printTable(5);
+//		t.printTable(5);
 	}
 }

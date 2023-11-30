@@ -27,7 +27,7 @@ public class Table {
 		System.out.println();
 	}*/
 
-	public static synchronized void printTable(int n) { // synchronized static method
+	/*public static synchronized void printTable(int n) { // synchronized static method
 		synchronized (Table.class) { // synchronized block in a static method
 			System.out.println(Thread.currentThread().getName());
 			for(int i=1; i<=5; i++) {
@@ -43,9 +43,9 @@ public class Table {
 			}
 			System.out.println();
 		}
-	}
+	}*/
 	
-	/*synchronized void printTable(int n) { // synchronized method
+	synchronized void printTable(int n) { // synchronized method
 		System.out.println(Thread.currentThread().getName());
 		for(int i=1; i<=5; i++) {
 			System.out.println(n*i);
@@ -57,7 +57,7 @@ public class Table {
 			}
 		}
 		System.out.println();
-	}*/
+	}
 	
 	/*void printTable(int n) {
 		synchronized (this) { // khối đồng bộ: (synchronized block)

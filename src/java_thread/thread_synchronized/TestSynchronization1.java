@@ -18,10 +18,17 @@ public class TestSynchronization1 {
 		MyThread1 t1 = new MyThread1(table, "Thread T1");
 //		MyThread1 t1 = new MyThread1(table);
 
-		MyThread1 t2 = new MyThread1(table);
+		MyThread2 t2 = new MyThread2(table2);
+		MyThread2 t3 = new MyThread2(table2, 50);
 		t2.setName("Thread T2");
 
 		t1.start();
+		t3.start();
+		try {
+			Thread.sleep(300);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		t2.start();
 	}
 }
