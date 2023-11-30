@@ -116,10 +116,11 @@ public class MyLinkedList {
 
             Node currentNode = currentHead;
             while (true) {
-                if(currentNode.next != null) {
-                    if(currentNode.next.value == removedValue) {
-                        currentNode.next = currentNode.next.next;
-                        return currentHead;
+                Node nextNode = currentNode.next;
+                if(nextNode != null) {
+                    if(nextNode.value == removedValue) {
+                        currentNode.next = nextNode.next;
+                        break;
                     }
                     currentNode = currentNode.next;
                 } else {
@@ -129,7 +130,7 @@ public class MyLinkedList {
             }
         }
 
-        return null;
+        return currentHead;
     }
 
     private static void displayLinkedList(Node head) {
@@ -186,8 +187,9 @@ public class MyLinkedList {
         removeTailNode(headNode);
         displayLinkedList(headNode);
 
-        System.out.println("Remove 3 from linked list");
-        Node newHeadNode = removeNode(headNode, 3);
+        int removedValue = 2;
+        System.out.println("Remove " + removedValue + " from linked list");
+        Node newHeadNode = removeNode(headNode, removedValue);
         displayLinkedList(newHeadNode);
     }
 }
