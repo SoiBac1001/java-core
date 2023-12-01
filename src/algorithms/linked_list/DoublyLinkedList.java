@@ -29,6 +29,18 @@ public class DoublyLinkedList {
         return this.length;
     }
 
+    public void insertFirst(int value) {
+        DoublyNode node = new DoublyNode(value);
+        if(isEmpty()) {
+            tail = node;
+        } else {
+            head.previous = node;
+            node.next = head;
+        }
+        head = node;
+        length++;
+    }
+
     public void insertLast(int value) {
         DoublyNode newNode = new DoublyNode(value);
         if(isEmpty()) {
@@ -41,16 +53,20 @@ public class DoublyLinkedList {
         this.length++;
     }
 
-    public void insertFirst(int value) {
-        DoublyNode node = new DoublyNode(value);
+    public void deleteFirst() {
         if(isEmpty()) {
-            tail = node;
+            System.out.println("DLL is empty !");
         } else {
-            head.previous = node;
-            node.next = head;
+            DoublyNode nextNode = head.next;
+            if(length == 1) {
+                tail = null;
+            } else {
+                nextNode.previous = null;
+            }
+            head.next = null;
+            head = nextNode;
+            length--;
         }
-        head = node;
-        length++;
     }
 
     public void displayForward() {
@@ -82,10 +98,14 @@ public class DoublyLinkedList {
     }
 
     public static void main(String[] args) {
-//        DoublyLinkedList doublyLinkedList = initWithInsertLast();
-        DoublyLinkedList doublyLinkedList = initWithInsertFirst();
+        DoublyLinkedList doublyLinkedList = initWithInsertLast();
+//        DoublyLinkedList doublyLinkedList = initWithInsertFirst();
+//        display(doublyLinkedList);
+        doublyLinkedList.displayForward();
 
-        display(doublyLinkedList);
+        System.out.print("\n=== Delete first ===");
+        doublyLinkedList.deleteFirst();
+        doublyLinkedList.displayForward();
     }
 
     private static DoublyLinkedList initWithInsertLast() {
