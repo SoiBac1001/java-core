@@ -19,6 +19,11 @@ public class Java_Core {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
+        String str = null;
+        System.out.println(String.valueOf(10));
+
+        Bike bike = new Bike("Honda");
+
         System.out.println("LamQT-GE-ONB-INS-INVITE-TEST-PRW-C10".contains("PRW"));
         testDouble();
     	double d = 20000000000d;
@@ -66,5 +71,22 @@ public class Java_Core {
         double x = Math.pow(10, d);
         ret = Math.floor((n * x) + 0.5000000001)/x;
         return ret;
+    }
+}
+
+class Vehicle {
+    Vehicle() { System.out.println("Vehicle is created."); }
+}
+
+class Bike extends Vehicle {
+    private String name;
+    Bike() { System.out.println("Bike is created."); }
+
+    Bike(String brand)
+    {
+        super(); // it calls Vehicle(), the parent class
+        // constructor of class Bike
+        this.name = "hung";
+        System.out.println("Bike brand is " + brand);
     }
 }

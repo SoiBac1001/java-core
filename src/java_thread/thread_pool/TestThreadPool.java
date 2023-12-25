@@ -9,6 +9,7 @@ public class TestThreadPool {
         for(int i = 0; i < 10; i++) {
             Runnable worker = new WorkerThread("" + i);
             executorService.execute(worker); //calling execute method of ExecutorService
+//            executorService.submit()
         }
 
         executorService.shutdown();

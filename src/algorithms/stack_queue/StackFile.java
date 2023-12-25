@@ -6,6 +6,7 @@ import java.util.Stack;
 
 public class StackFile {
     public static long folderSizeByRecursion(File directory) {
+        // directory.listFiles(): get file or folder
         long length = 0;
         for (File file : Objects.requireNonNull(directory.listFiles())) {
             if (file.isFile())
@@ -33,7 +34,7 @@ public class StackFile {
     }
     
     private static void pushFileToStack(Stack<File> stack, File[] files) {
-        int a = 0; // khả năng lại push vào 1 ngăn mới của thread stack
+        // khả năng lại push vào 1 ngăn mới của thread stack
         if(files != null && files.length > 0) {
             for (File file : files) {
                 stack.push(file);

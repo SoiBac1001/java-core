@@ -3,7 +3,12 @@ package algorithms.tree;
 public class MyBinaryTree {
     private TreeNode root;
 
-    public MyBinaryTree() {
+    public TreeNode getRoot() {
+        return root;
+    }
+
+    public void setRoot(TreeNode root) {
+        this.root = root;
     }
 
     public void init() {
@@ -13,5 +18,9 @@ public class MyBinaryTree {
         TreeNode n3 = new TreeNode(3);
         TreeNode n4 = new TreeNode(4);
         TreeNode n5 = new TreeNode(5);
+        n0.setLeft(n1); n0.setRight(n2);
+        n1.setLeft(n3); n1.setRight(n4);
+        n2.setRight(n5);
+        this.root = n0;
     }
 }
