@@ -29,9 +29,20 @@ public class Test {
             LocalDate currentDay = firstDay.plusDays(i);
             if(isSunday(currentDay)) {
                 int monthValue = currentDay.getMonthValue();
-                result.computeIfPresent(monthValue, (key, val) -> val + 1);
+                Integer value = result.computeIfPresent(monthValue, (key, val) -> val + 1);
+                if(value == null) {
+                    int prevMonth = monthValue - 1;
+                    Integer prevValue = result.get(prevMonth);
+                    if(prevValue != null && prevValue < 5) {
+                        result.remove(prevMonth);
+                    }
+                }
                 result.putIfAbsent(monthValue, 1);
             }
+        }
+        Integer value = result.get(12);
+        if(value != null && value < 5) {
+            result.remove(12);
         }
 
         return result;
