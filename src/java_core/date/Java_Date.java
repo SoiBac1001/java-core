@@ -10,11 +10,17 @@ package java_core.date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
 
 public class Java_Date {
+	private static SimpleDateFormat sdformat = new SimpleDateFormat("yyyy-MM-dd");
+	private static SimpleDateFormat sdformatMY = new SimpleDateFormat("MM-yyyy");
+
 	public static void main(String[] args) {
+		testDateTime();
+
 		LocalDate localDate = LocalDate.now();
 		int year = localDate.getYear();
 		System.out.println(localDate);
@@ -47,5 +53,28 @@ public class Java_Date {
 			System.out.println("Date is invalid ! Ex: 20/12/2018");
 		}
 		return false;
+	}
+
+	public static void testDateTime() {
+		java.sql.Date yesterday = new java.sql.Date(addDate(-1).getTime());
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(yesterday);
+		//cal.set(Calendar.DAY_OF_MONTH, 1);
+		//cal.add(Calendar.DATE, -1);
+		String lastDayOfMonth = sdformat.format(cal.getTime()); // Tính phí chốt tháng M-1
+		String mYStr = sdformatMY.format(cal.getTime());
+		int day = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
+	}
+
+	public static Date addDate(int day) {
+		return addDate(new Date(), day);
+	}
+
+	public static Date addDate(Date date, int day) {
+		Calendar calendar = Calendar.getInstance();
+		calendar.setTime(date);
+		calendar.add(Calendar.DATE, day);
+
+		return calendar.getTime();
 	}
 }

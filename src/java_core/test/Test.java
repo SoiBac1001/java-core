@@ -4,10 +4,17 @@ import java.sql.Timestamp;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
+import java.util.Calendar;
+import java.util.TimeZone;
 import java.util.function.Function;
 
 public class Test {
     public static void main(String[] args) throws Exception {
+        Calendar cal1 = Calendar.getInstance(TimeZone.getTimeZone("Asia/Ho_Chi_Minh"));
+        String bccContractCode = "" + 413847 + "/" + String.valueOf(cal1.get(Calendar.YEAR)).substring(1) + "-HĐTK";
+
+        int year = Calendar.getInstance().get(Calendar.YEAR) - 1;
+
         Timestamp tomorrowTimeToViewReport = getTomorrowTimeToViewReport(Timestamp.valueOf("2023-10-21 12:30:00"), 9);
         Integer five = Integer.valueOf(5);
         five.equals(null);

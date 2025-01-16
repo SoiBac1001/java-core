@@ -1,5 +1,6 @@
 package algorithms;
 
+import java.sql.Time;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.temporal.ChronoField;
@@ -7,8 +8,10 @@ import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
+        Time validStartTime = Time.valueOf("09:00:00");
+        System.out.println(0 % 50);
         // Given array arr[]
-        int arr[] = {11,5,3,12,6,8,1,7,4};
+        int[] arr = {11,5,3,12,6,8,1,7,4};
 //        int arr[] = {4,5,7,10,10,12,12,12};
 
         int N = arr.length;

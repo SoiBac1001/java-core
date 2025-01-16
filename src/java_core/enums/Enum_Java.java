@@ -21,7 +21,7 @@ public class Enum_Java {
 
     	private int value;
 
-		private COLOR(int value) { // Constructor của enum trong java là private. Khi bạn không khai báo là private thì trình biên dịch sẽ tạo ra Constructor private.
+		COLOR(int value) { // Constructor của enum trong java là private. Khi bạn không khai báo là private thì trình biên dịch sẽ tạo ra Constructor private.
             System.out.println("Constructor called for: " + this.toString());
 			this.value = value;
 		}
@@ -29,7 +29,9 @@ public class Enum_Java {
     }
     
     public static void main(String[] args) {
+        COLOR currentColor = COLOR.valueOf("YELLOW");
         COLOR red = COLOR.valueOf("RED");
+        System.out.println(COLOR.RED.equals(currentColor));
         red.ordinal();
         System.out.println(COLOR.BLUE); // BLUE
         COLOR c = COLOR.RED;

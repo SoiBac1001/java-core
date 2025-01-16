@@ -19,13 +19,13 @@ public class Java_Core {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
+        testDouble();
         String str = null;
         System.out.println(String.valueOf(10));
 
         Bike bike = new Bike("Honda");
 
         System.out.println("LamQT-GE-ONB-INS-INVITE-TEST-PRW-C10".contains("PRW"));
-        testDouble();
     	double d = 20000000000d;
 //    	DecimalFormat decimalFormat = new DecimalFormat("#,##0.0");
     	DecimalFormat decimalFormat = new DecimalFormat("###,###,##0.00");
@@ -55,6 +55,8 @@ public class Java_Core {
         for (int i = 0; i < 100; i++) {
             total += 0.2;
         }
+        // expected total = 20
+        // actual total = 20.19999999999996
         System.out.println("total = " + total);
     }
     
