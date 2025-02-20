@@ -2,8 +2,8 @@ package algorithms.stack_queue;
 
 public class MyMain {
     public static void main(String[] args) {
-//        testStack();
-        testQueue();
+        testStack();
+//        testQueue();
     }
 
     private static void testStack() {

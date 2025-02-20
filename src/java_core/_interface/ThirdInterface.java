@@ -3,10 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package java_core.interface_java_core;
-
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+package java_core._interface;
 
 /**
  *

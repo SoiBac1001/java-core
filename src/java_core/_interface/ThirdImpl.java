@@ -1,4 +1,4 @@
-package java_core.interface_java_core;
+package java_core._interface;
 
 public class ThirdImpl extends AbstractThird implements ThirdInterface {
 

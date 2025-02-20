@@ -1,4 +1,4 @@
-package java_core.interface_java_core;
+package java_core._interface;
 
 public class AbstractThird {
     public void print(String string) { // tại sao để default ở base class thì child class cần override it ?
